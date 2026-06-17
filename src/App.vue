@@ -40,6 +40,7 @@
 </div>
 
 
+<!-- HERO SECTION -->
 <section class="container-fluid text-center"> 
   <br>
   <div class="container">
@@ -47,6 +48,10 @@
     <p class="fs-3">We help organizations communicate with clarity, purpose, and impact through strategic storytelling, visual communications, and AI-powered creative content.</p>
     <p><button class="btn btn-app">LETS TALK</button> * <button class="btn btn-app">VIEW OUR WORK</button></p>
   </div>
+</section>
+
+<section class="container-fluid section-serve">
+d
 </section>
 
 </template>
@@ -84,5 +89,11 @@
 
  .btn:hover{
   color:red;
+ }
+
+ .section-serve{
+   margin-top: 120px;
+   background-color: #FDFCF8;
+   height: 500px;
  }
 </style>
