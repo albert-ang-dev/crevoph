@@ -3,7 +3,16 @@
 
 
   const coreServices = ref([
-    {service:"Brand Story Telling",desc:"Developing compelling stories that communicate your brand's purpose, values, and unique position in the market while building deeper connections with your audience."}
+    {service:"Brand Story Telling",desc:"Developing compelling stories that communicate your brand's purpose, values, and unique position in the market while building deeper connections with your audience."},
+    {service:"Narrative Direction",desc:"Helping organizations define what they want to say, how they want to be perceived, and how their message should evolve across different platforms and audiences."},
+    {service:"Visual Strategy",desc:"Aligning creative visuals, content, and production approaches with business objectives to ensure every communication serves a strategic purpose."},
+    {service:"Corporate Communications",desc:"Creating internal and external communication materials that strengthen organizational messaging, stakeholder engagement, and brand consistency."},
+    {service:"Executive Messaging",desc:"Helping founders, executives, and leadership teams communicate vision, strategy, and thought leadership with clarity, confidence, and authenticity."},
+    {service:"Executive Messaging",desc:"Helping founders, executives, and leadership teams communicate vision, strategy, and thought leadership with clarity, confidence, and authenticity."},
+    {service:"Commercial & Campaign Development",desc:"Developing creative concepts and content strategies for marketing campaigns, product launches, brand initiatives, and audience engagement programs."},
+    {service:"Documentary Storytelling",desc:"Capturing authentic stories, milestones, journeys, and human experiences through documentary-style narratives that create emotional connection and credibility."},
+    {service:"Photography & Video Production",desc:"End-to-end visual content production that brings stories to life through photography, video, interviews, events, and branded content."}
+
   ]);
 
 
@@ -64,17 +73,40 @@
   </section>
 
   <!-- SERVICES -->
-  <section class="container">
-    <h2 class="fst-italic fw-bold mb-3">Core Services</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quisquam animi harum officiis consequatur laudantium blanditiis, debitis culpa totam! Deleniti!</p>
-    <div class="row">
-      <div class="col-sm-4" v-for="n in coreServices">
-        <div class="card" style="width: 18rem;">
-          <p>{{ n.service }}</p>
+  <section class="services-section" id="services">
+    <div class="container-xl">
+
+      <!-- Section header -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 col-lg-8 text-center">
+          <span class="services-eyebrow text-uppercase">What We Do</span>
+          <h2 class="services-title fst-italic fw-bold mt-2 mb-3">Core Services</h2>
+          <p class="services-lead">
+            We combine strategic thinking, storytelling expertise, and visual communications to help organizations achieve their communication objectives.
+
+          </p>
         </div>
       </div>
+
+      <!-- Cards grid -->
+      <div class="row g-4">
+        <div
+          class="col-12 col-sm-6 col-lg-4"
+          v-for="(n, index) in coreServices"
+          :key="index"
+        >
+          <div class="service-card h-100">
+            <div class="service-card-number">{{ String(index + 1).padStart(2, '0') }}</div>
+            <h5 class="service-card-title">{{ n.service }}</h5>
+            <p class="service-card-desc">{{ n.desc }}</p>
+            <div class="service-card-line"></div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
+  <br>
 
 
   <!-- LETS CONNECT -->
@@ -236,6 +268,92 @@
 
 }
 
+/* ── SERVICES ── */
+.services-section {
+  background-color: #EDECEB;
+  padding: 80px 0;
+}
+
+.services-eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #C9A84C;
+}
+
+.services-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: #fff;
+  line-height: 1.25;
+}
+
+.services-lead {
+  font-size: 0.85rem;
+  color: #aaa;
+  line-height: 1.75;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  position: relative;
+  transition: border-color 0.25s, transform 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  border-color: #B27F22;
+  transform: translateY(-4px);
+}
+
+.service-card-number {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #B27F22;
+  margin-bottom: 1rem;
+}
+
+.service-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.service-card-desc {
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.75;
+  flex-grow: 1;
+  margin-bottom: 1.25rem;
+}
+
+.service-card-line {
+  height: 2px;
+  width: 32px;
+  background-color: #B27F22;
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+.service-card:hover .service-card-line {
+  width: 56px;
+}
+
+@media (max-width: 575.98px) {
+  .services-section {
+    padding: 56px 0;
+  }
+}
+
+/* ── LETS CONNECT ── */
 .frm-connect{
   padding: 15px 15px 15px 15px;
   border: 1px solid black;
@@ -243,6 +361,6 @@
 }
 
 .card{
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 </style>
