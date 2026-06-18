@@ -1,12 +1,20 @@
 <script setup>
   import { ref, onMounted, onUnmounted } from 'vue';
+
+
+  const coreServices = ref([
+    {service:"Brand Story Telling",desc:"Developing compelling stories that communicate your brand's purpose, values, and unique position in the market while building deeper connections with your audience."}
+  ]);
+
+
 </script>
 
 <template>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-white border-bottom px-4 py-2">
+  <nav class="navbar navbar-expand-lg bg-white border-bottom py-3 px-3">
     <div class="container-xl">
+
       <a class="navbar-brand brand-logo" href="#">crevo</a>
 
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -22,116 +30,69 @@
           <li class="nav-item"><a class="nav-link nav-item-link" href="#contact">Contact</a></li>
         </ul>
       </div>
+
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero-section text-center">
-    <div class="container-xl px-4">
-      <h1 class="hero-title fst-italic fw-bold mb-3">
-        Strategic Storytelling for Organizations,<br>Brands, and Leaders
-      </h1>
-      <p class="hero-sub mx-auto mb-4">
-        We help organizations communicate with clarity, purpose, and impact through
-        strategic storytelling, visual communications, and AI-powered creative content.
-      </p>
-      <div class="d-flex justify-content-center gap-3">
-        <button class="btn btn-gold rounded-pill fw-bold text-uppercase px-4 py-2">Lets Talk</button>
-        <button class="btn btn-gold rounded-pill fw-bold text-uppercase px-4 py-2">View Our Work</button>
-      </div>
-    </div>
-  </section>
+  <section class="hero-section">
+    <div class="container-xl px-2">
+      <div class="row align-items-center">
 
-  <!-- CORE SERVICES -->
-  <section class="section-pad section-white" id="services">
-    <div class="container-xl px-4">
-
-      <p class="eyebrow mb-4">CORE SERVICES</p>
-
-      <div class="d-flex flex-column gap-0">
-
-        <div class="svc-row d-flex align-items-center gap-4">
-          <div class="svc-circle flex-shrink-0">
-            <span>Brand<br>Storytelling</span>
-          </div>
-          <p class="svc-desc mb-0">Developing compelling stories that communicate your brand's purpose, values, and unique position in the market while building deeper connections with your audience.</p>
-        </div>
-
-        <div class="svc-row d-flex align-items-center gap-4">
-          <div class="svc-circle flex-shrink-0">
-            <span>Narrative<br>Direction</span>
-          </div>
-          <p class="svc-desc mb-0">Helping organizations define what they want to say, how they want to be perceived, and how their message should evolve across different platforms and audiences</p>
-        </div>
-
-        <div class="svc-row d-flex align-items-center gap-4">
-          <div class="svc-circle flex-shrink-0">
-            <span>Visual<br>Strategy</span>
-          </div>
-          <p class="svc-desc mb-0">Aligning creative visuals, content, and production approaches with business objectives to ensure every communication serves a strategic purpose.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CREVO + AI -->
-  <section class="section-pad section-white" id="ai">
-    <div class="container-xl px-4">
-
-      <p class="eyebrow mb-4">CREVO + AI</p>
-
-      <div class="d-flex flex-column align-items-start gap-2">
-        <span class="ai-pill">AI-assisted content creation</span>
-        <span class="ai-pill">AI-powered commercials</span>
-        <span class="ai-pill">Executive communications</span>
-        <span class="ai-pill">Brand storytelling</span>
-        <span class="ai-pill">Brand storytelling</span>
-        <span class="ai-pill">Campaign development</span>
-        <span class="ai-pill">Emerging creative technologies</span>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- INDUSTRIES WE SERVE -->
-  <section class="section-pad section-cream" id="industries">
-    <div class="container-xl px-4">
-
-      <p class="eyebrow mb-1">INDUSTRIES WE SERVE</p>
-      <p class="ind-quote mb-4">"Since 1998, CREVO has partnered with organizations ranging from startups to established national and multinational brands."</p>
-
-      <div class="row row-cols-5 g-2">
-        <div class="col" v-for="i in 7" :key="i">
-          <div class="ind-img"></div>
-          <p class="ind-label text-center mt-1 mb-0">Retail</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- WHAT OUR CLIENTS DESCRIBE US -->
-  <section class="section-pad section-cream" id="clients">
-    <div class="container-xl px-4">
-
-      <p class="eyebrow mb-4">WHAT OUR CLIENTS DESCRIBES US</p>
-
-      <div class="d-flex flex-column gap-4">
-        <div class="testi-block" v-for="n in 3" :key="n">
-          <div class="d-flex align-items-center gap-2 mb-1">
-            <span class="testi-name">Jane Doe</span>
-            <span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-          <p class="testi-text mb-0">
-            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+        <!-- Left: copy -->
+        <div class="col-12 col-lg-6 hero-left">
+          <h1 class="hero-title fst-italic fw-bold mb-3">
+            Strategic Storytelling for<br>Organizations, Brands,<br>and Leaders
+          </h1>
+          <p class="hero-sub mb-4">
+            We help organizations communicate with clarity, purpose, and impact through
+            strategic storytelling, visual communications, and AI-powered creative content.
           </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <button class="btn btn-gold rounded-pill fw-bold text-uppercase px-4 py-2">Lets Talk</button>
+            <button class="btn btn-gold rounded-pill fw-bold text-uppercase px-4 py-2">View Our Work</button>
+          </div>
+        </div>
+
+        <!-- Right: brand mark -->
+        <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center hero-right">
+          <img src="./others/images/crevo-log.png" alt="Crevo" class="hero-img">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="container">
+    <h2 class="fst-italic fw-bold mb-3">Core Services</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quisquam animi harum officiis consequatur laudantium blanditiis, debitis culpa totam! Deleniti!</p>
+    <div class="row">
+      <div class="col-sm-4" v-for="n in coreServices">
+        <div class="card" style="width: 18rem;">
+          <p>{{ n.service }}</p>
         </div>
       </div>
+    </div>
+  </section>
 
+
+  <!-- LETS CONNECT -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Hello</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi sequi repellat id incidunt nam modi officiis quod? Aut quisquam itaque, tenetur enim fuga delectus doloribus sunt! Quidem quasi molestias sunt a mollitia nisi similique laborum praesentium optio ab numquam repellendus quia, accusantium itaque, asperiores tenetur odio. Eveniet illum quia magni sit repellendus. Quis suscipit id nihil necessitatibus. Ipsam repellendus inventore, voluptate itaque vitae maiores adipisci error temporibus ex quibusdam consequatur tenetur fugiat, laborum doloremque, nemo vero id sit illum rem harum dolorum dolorem soluta eaque quae! Accusantium nam, quisquam rem laboriosam, praesentium dolor quos iure quia culpa voluptas a porro!</p>
+      </div>
+
+      <div class="col-md-6">
+        <form action="" method="POST" class="frm-connect">
+          <h3>Lets Connect!</h3>
+          <p>Name: <input type="text" name="" id="" class="form-control"></p>
+          <p>Email: <input type="email" name="" id="" class="form-control"></p>
+          <p>Message: <textarea name="" id="" class="form-control"></textarea></p>
+        </form> 
+      </div>
     </div>
   </section>
 
@@ -146,7 +107,7 @@
 
 /* ── NAVBAR ── */
 .brand-logo {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #111 !important;
   text-decoration: none;
@@ -154,7 +115,7 @@
 }
 
 .nav-item-link {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   color: #111 !important;
@@ -165,23 +126,46 @@
   color: #B27F22 !important;
 }
 
+@media (max-width: 991.98px) {
+  #navbarNav {
+    background-color: #C9A84C;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-item-link {
+    color: #fff !important;
+  }
+
+  .nav-item-link:hover {
+    color: rgba(255, 255, 255, 0.75) !important;
+  }
+}
+
 /* ── HERO ── */
 .hero-section {
   background-color: #fff;
-  padding: 60px 16px 52px;
+  padding: 48px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero-left {
+  padding-right: 2rem;
 }
 
 .hero-title {
-  font-size: 1.35rem;
+  font-size: clamp(1.3rem, 2.8vw, 2rem);
   color: #B27F22;
   line-height: 1.35;
   letter-spacing: -0.01em;
 }
 
 .hero-sub {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   color: #333;
-  line-height: 1.7;
+  line-height: 1.75;
   max-width: 380px;
 }
 
@@ -199,128 +183,66 @@
   color: #fff;
 }
 
-/* ── SECTIONS ── */
-.section-pad {
-  padding: 48px 0;
+/* Right column brand mark */
+.hero-right {
+  padding-left: 0rem;
 }
 
-.section-white {
-  background-color: #fff;
-}
-
-.section-cream {
-  background-color: #FDFCF8;
-}
-
-/* ── EYEBROW ── */
-.eyebrow {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  color: #B27F22;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-
-/* ── CORE SERVICES ── */
-.svc-row {
-  padding: 18px 0;
-  border-bottom: 1px solid #ece8e0;
-}
-
-.svc-row:first-child {
-  border-top: 1px solid #ece8e0;
-}
-
-.svc-circle {
-  width: 72px;
-  height: 72px;
-  min-width: 72px;
-  background-color: #C9A84C;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.svc-circle span {
-  color: #fff;
-  font-size: 0.58rem;
-  font-weight: 700;
-  line-height: 1.4;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.svc-desc {
-  font-size: 0.75rem;
-  color: #444;
-  line-height: 1.7;
-  flex: 1;
-}
-
-/* ── CREVO + AI ── */
-.ai-pill {
-  display: inline-block;
-  background-color: #C9A84C;
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 500;
-  padding: 8px 22px;
-  border-radius: 50px;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-
-/* ── INDUSTRIES ── */
-.ind-quote {
-  font-size: 0.72rem;
-  color: #444;
-  line-height: 1.6;
-  max-width: 560px;
-  margin-top: 4px;
-}
-
-.ind-img {
+.hero-img {
   width: 100%;
-  padding-top: 100%;
-  background-color: #CCCACA;
-  border-radius: 3px;
+  max-width: 480px;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
-.ind-label {
-  font-size: 0.65rem;
-  color: #555;
-}
-
-/* ── TESTIMONIALS ── */
-.testi-block {
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid #e4e0d8;
-}
-
-.testi-block:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.testi-name {
-  font-size: 0.85rem;
-  font-weight: 700;
+.hero-brand-mark {
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  font-weight: 900;
   color: #111;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  user-select: none;
 }
 
-.testi-stars {
-  color: #B27F22;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: auto;
+    padding: 48px 0 40px;
+    text-align: center;
+  }
+
+  .hero-left {
+    padding-right: 0;
+  }
+
+  .hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .d-flex.gap-3 {
+    justify-content: center;
+  }
+
+  .hero-right {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .hero-img {
+    max-width: 280px;
+  }
+
 }
 
-.testi-text {
-  font-size: 0.72rem;
-  color: #555;
-  line-height: 1.75;
-  max-width: 520px;
+.frm-connect{
+  padding: 15px 15px 15px 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.card{
+  margin-bottom: 5px;
 }
 </style>

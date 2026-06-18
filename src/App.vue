@@ -56,44 +56,7 @@ d
 
 </template>
 
-<style>
+<style scope>
 
-        /* Optional: Adds a subtle dark background on mobile when menu expands */
-        @media (max-width: 991.98px) {
-            .navbar-collapse {
-                background-color: rgba(0, 0, 0, 0.8);
-                padding: 1rem;
-                border-radius: 0.5rem;
-                margin-top: 1rem;
-            }
-        }
 
-.active {
-  background-color: #B27F22;
-  border-radius: 5px;
-
-}
- .nav-link {
-   color: black;
- }       
-
- .section-header{
-    color:#B27F22;
- }
-
- .btn-app{
-   background-color: #B27F22;
-   color: white;
-   font-weight: 700;
- }
-
- .btn:hover{
-  color:red;
- }
-
- .section-serve{
-   margin-top: 120px;
-   background-color: #FDFCF8;
-   height: 500px;
- }
 </style>
