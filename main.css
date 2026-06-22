@@ -1,3 +1,8 @@
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+
     body {
       background-color: #f0f0f0;
       font-family: Georgia, 'Times New Roman', serif;
@@ -429,4 +434,262 @@
       font-size: 0.78rem;
       color: #888;
       letter-spacing: 0.04em;
+    }
+
+    /* ── Testimonials ── */
+    .testimonials-section {
+      padding: 6rem 0;
+      background-color: #f0f0f0;
+    }
+    .testimonials-header {
+      max-width: 580px;
+      margin-bottom: 3.5rem;
+    }
+    .testimonials-label {
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #c87533;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .testimonials-heading {
+      font-family: Georgia, serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      line-height: 1.3;
+      margin: 0;
+    }
+    .testimonial-card {
+      position: relative;
+      height: 100%;
+      background-color: #fff;
+      border: 1px solid #e2e2e2;
+      border-radius: 12px;
+      padding: 2.25rem 2rem 2rem;
+      margin: 0;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      border-color: #d8d8d8;
+      box-shadow: 0 14px 34px rgba(0,0,0,0.08);
+    }
+    .testimonial-quote-mark {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.75rem;
+      font-size: 2.5rem;
+      color: #B27F22;
+      opacity: 0.12;
+    }
+    .testimonial-stars {
+      display: flex;
+      gap: 0.2rem;
+      color: #B27F22;
+      font-size: 0.82rem;
+      margin-bottom: 1.1rem;
+    }
+    .testimonial-text {
+      font-family: Georgia, serif;
+      font-size: 1.02rem;
+      font-style: italic;
+      color: #333;
+      line-height: 1.75;
+      margin: 0 0 1.75rem;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #eee;
+    }
+    .testimonial-avatar {
+      flex-shrink: 0;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: #1a1a1a;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+    .testimonial-author-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .testimonial-name {
+      font-family: Arial, sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+    .testimonial-role {
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 0.1rem;
+    }
+
+    /* ── Contact ── */
+    .contact-section {
+      padding: 6rem 0 7rem;
+      background-color: #f0f0f0;
+    }
+    .contact-label {
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #c87533;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .contact-heading {
+      font-family: Georgia, serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      line-height: 1.25;
+      margin: 0 0 1.25rem;
+    }
+    .contact-body {
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      max-width: 420px;
+    }
+
+    /* Contact detail list */
+    .contact-details {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .contact-details li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.1rem 0;
+      border-top: 1px solid #ccc;
+    }
+    .contact-details li:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+    .contact-detail-icon {
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: #e6e6e6;
+      color: #B27F22;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+    }
+    .contact-detail-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-detail-label {
+      font-family: Arial, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #3a7d60;
+      margin-bottom: 0.15rem;
+    }
+    .contact-detail-text a,
+    .contact-detail-text span:not(.contact-detail-label) {
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+      color: #1a1a1a;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .contact-detail-text a:hover {
+      color: #B27F22;
+    }
+
+    /* Form card */
+    .contact-form {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+    }
+    .contact-field-row {
+      display: flex;
+      gap: 1.25rem;
+    }
+    .contact-field-row .contact-field {
+      flex: 1;
+    }
+    .contact-field {
+      margin-bottom: 1.25rem;
+    }
+    .contact-field label {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #1a1a1a;
+      margin-bottom: 0.5rem;
+    }
+    .contact-field input,
+    .contact-field textarea {
+      width: 100%;
+      font-family: Arial, sans-serif;
+      font-size: 0.92rem;
+      color: #1a1a1a;
+      background-color: #f7f7f7;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0.75rem 0.9rem;
+      transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+    }
+    .contact-field input::placeholder,
+    .contact-field textarea::placeholder {
+      color: #aaa;
+    }
+    .contact-field input:focus,
+    .contact-field textarea:focus {
+      outline: none;
+      background-color: #fff;
+      border-color: #B27F22;
+      box-shadow: 0 0 0 3px rgba(178,127,34,0.12);
+    }
+    .contact-field textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .contact-form .btn-hero-primary {
+      width: 100%;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 575.98px) {
+      .contact-field-row {
+        flex-direction: column;
+        gap: 0;
+      }
+      .contact-form {
+        padding: 1.75rem;
+      }
     }
