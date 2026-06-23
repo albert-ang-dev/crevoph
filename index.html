@@ -3,7 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CREVO PH</title>
+
+  <!-- ── Primary SEO ── -->
+  <title>CREVO PH | Strategic Storytelling &amp; Visual Communications</title>
+  <meta name="description" content="CREVO (Creative Evolution) is a strategic storytelling and visual communications company helping organizations, brands, and leaders communicate with clarity, purpose, and impact since 1999.">
+  <meta name="keywords" content="strategic storytelling, visual communications, brand storytelling, corporate communications, executive messaging, video production, documentary, AI content, Philippines, Metro Manila, CREVO">
+  <meta name="author" content="CREVO (Creative Evolution)">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="canonical" href="https://crevo.ph/">
+
+  <!-- ── Open Graph / Facebook ── -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CREVO PH">
+  <meta property="og:url" content="https://crevo.ph/">
+  <meta property="og:title" content="CREVO PH | Strategic Storytelling &amp; Visual Communications">
+  <meta property="og:description" content="Helping organizations, brands, and leaders communicate with clarity, purpose, and impact through strategic storytelling, visual communications, and AI-powered creative content.">
+  <meta property="og:image" content="https://crevo.ph/images/crevo-logo.png">
+  <meta property="og:locale" content="en_PH">
+
+  <!-- ── Twitter / X ── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CREVO PH | Strategic Storytelling &amp; Visual Communications">
+  <meta name="twitter:description" content="Helping organizations, brands, and leaders communicate with clarity, purpose, and impact since 1999.">
+  <meta name="twitter:image" content="https://crevo.ph/images/crevo-logo.png">
+
+  <!-- ── Structured Data ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CREVO (Creative Evolution)",
+    "alternateName": "CREVO PH",
+    "url": "https://crevo.ph/",
+    "logo": "https://crevo.ph/images/crevo-logo.png",
+    "description": "Strategic storytelling and visual communications company helping organizations, brands, and leaders communicate with clarity, purpose, and impact since 1999.",
+    "foundingDate": "1999",
+    "founder": {
+      "@type": "Person",
+      "name": "Jennifer Chua"
+    },
+    "email": "hello@crevo.ph",
+    "telephone": "+63-2-0000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Metro Manila",
+      "addressCountry": "PH"
+    },
+    "sameAs": [
+      "https://www.facebook.com/",
+      "https://www.linkedin.com/",
+      "https://www.youtube.com/"
+    ]
+  }
+  </script>
+
   <link rel="icon" type="image/png" href="images/crevo-logo.png">
   <link rel="apple-touch-icon" href="images/crevo-logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -50,7 +104,7 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero-section">
+  <section class="hero-section" id="home">
     <div class="container">
       <div class="row align-items-center g-5">
 
@@ -59,8 +113,8 @@
           <h1>Strategic Storytelling for Organizations, Brands, and Leaders</h1>
           <p>We help organizations communicate with clarity, purpose, and impact through strategic storytelling, visual communications, and AI-powered creative content.</p>
           <div class="d-flex align-items-center flex-wrap gap-2">
-            <a href="#" class="btn-hero-primary">Schedule a Discovery Call</a>
-            <a href="#" class="btn-hero-primary">View Our Work</a>
+            <a href="#contact" class="btn-hero-primary">Schedule a Discovery Call</a>
+            <a href="#projects" class="btn-hero-primary">View Our Work</a>
           </div>
         </div>
 
@@ -75,37 +129,8 @@
     </div>
   </section>
 
-  <!-- INDUSTRIES WE SERVE -->
-  <section class="industries-section">
-    <p class="section-label industries-label">Industries We Serve</p>
-    <p class="industries-quote">"Since 1999, CREVO has partnered with organizations ranging from startups to established national and multinational brands."</p>
-
-    <div class="marquee-wrapper">
-      <!-- Track is duplicated so the loop is seamless -->
-      <div class="marquee-track">
-        <span class="marquee-item">Retail &amp; Consumer Brands</span>
-        <span class="marquee-item">Financial Services &amp; Insurance</span>
-        <span class="marquee-item">Technology &amp; Global Services</span>
-        <span class="marquee-item">Education</span>
-        <span class="marquee-item">Healthcare &amp; Life Sciences</span>
-        <span class="marquee-item">Real Estate &amp; Construction</span>
-        <span class="marquee-item">Nonprofit &amp; Government</span>
-        <span class="marquee-item">Hospitality &amp; Travel</span>
-        <!-- duplicate for seamless loop -->
-        <span class="marquee-item">Retail &amp; Consumer Brands</span>
-        <span class="marquee-item">Financial Services &amp; Insurance</span>
-        <span class="marquee-item">Technology &amp; Global Services</span>
-        <span class="marquee-item">Education</span>
-        <span class="marquee-item">Healthcare &amp; Life Sciences</span>
-        <span class="marquee-item">Real Estate &amp; Construction</span>
-        <span class="marquee-item">Nonprofit &amp; Government</span>
-        <span class="marquee-item">Hospitality &amp; Travel</span>
-      </div>
-    </div>
-  </section>
-
   <!-- ABOUT CREVO -->
-  <section class="about-section">
+  <section class="about-section" id="about">
     <div class="container">
       <div class="row align-items-start g-5">
 
@@ -147,8 +172,82 @@
     </div>
   </section>
 
+  <!-- INDUSTRIES WE SERVE -->
+  <section class="industries-section">
+    <p class="section-label industries-label">Industries We Serve</p>
+    <p class="industries-quote">"Since 1999, CREVO has partnered with organizations ranging from startups to established national and multinational brands."</p>
+
+    <div class="marquee-wrapper">
+      <!-- Track is duplicated so the loop is seamless -->
+      <div class="marquee-track">
+        <span class="marquee-item">Retail &amp; Consumer Brands</span>
+        <span class="marquee-item">Financial Services &amp; Insurance</span>
+        <span class="marquee-item">Technology &amp; Global Services</span>
+        <span class="marquee-item">Education</span>
+        <span class="marquee-item">Healthcare &amp; Life Sciences</span>
+        <span class="marquee-item">Real Estate &amp; Construction</span>
+        <span class="marquee-item">Nonprofit &amp; Government</span>
+        <span class="marquee-item">Hospitality &amp; Travel</span>
+        <!-- duplicate for seamless loop -->
+        <span class="marquee-item">Retail &amp; Consumer Brands</span>
+        <span class="marquee-item">Financial Services &amp; Insurance</span>
+        <span class="marquee-item">Technology &amp; Global Services</span>
+        <span class="marquee-item">Education</span>
+        <span class="marquee-item">Healthcare &amp; Life Sciences</span>
+        <span class="marquee-item">Real Estate &amp; Construction</span>
+        <span class="marquee-item">Nonprofit &amp; Government</span>
+        <span class="marquee-item">Hospitality &amp; Travel</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE HELP SOLVE -->
+  <section class="solve-section">
+    <div class="container">
+
+      <div class="solve-header">
+        <p class="section-label solve-label">What We Help Solve</p>
+        <h2 class="section-heading solve-heading">Common Challenges We Help Solve</h2>
+      </div>
+
+      <div class="row g-0 solve-grid">
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Clarifying your organization's story, positioning, and purpose</p>
+        </div>
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Communicating complex ideas with clarity and impact</p>
+        </div>
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Strengthening executive, leadership, and stakeholder communications</p>
+        </div>
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Creating meaningful content that engages audiences and drives action</p>
+        </div>
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Building trust through authentic storytelling and visual communication</p>
+        </div>
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Exploring AI-powered content creation while preserving human connection</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- CORE SERVICES -->
-  <section class="services-section">
+  <section class="services-section" id="services">
     <div class="container">
 
       <div class="services-header">
@@ -213,89 +312,6 @@
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <!-- WHAT WE HELP SOLVE -->
-  <section class="solve-section">
-    <div class="container">
-
-      <div class="solve-header">
-        <p class="section-label solve-label">What We Help Solve</p>
-        <h2 class="section-heading solve-heading">Common Challenges We Help Solve</h2>
-      </div>
-
-      <div class="row g-0 solve-grid">
-
-        <div class="col-md-6 solve-item">
-          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
-          <p class="solve-text">Clarifying your organization's story, positioning, and purpose</p>
-        </div>
-
-        <div class="col-md-6 solve-item">
-          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
-          <p class="solve-text">Communicating complex ideas with clarity and impact</p>
-        </div>
-
-        <div class="col-md-6 solve-item">
-          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
-          <p class="solve-text">Strengthening executive, leadership, and stakeholder communications</p>
-        </div>
-
-        <div class="col-md-6 solve-item">
-          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
-          <p class="solve-text">Creating meaningful content that engages audiences and drives action</p>
-        </div>
-
-        <div class="col-md-6 solve-item">
-          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
-          <p class="solve-text">Building trust through authentic storytelling and visual communication</p>
-        </div>
-
-        <div class="col-md-6 solve-item">
-          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
-          <p class="solve-text">Exploring AI-powered content creation while preserving human connection</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY CREVO -->
-  <section class="why-section">
-    <div class="container">
-      <div class="why-header">
-        <p class="section-label why-label">Why Crevo</p>
-        <h2 class="section-heading why-heading">When the message matters,<br>the thinking behind it matters more.</h2>
-      </div>
-
-      <div class="row g-0 why-grid">
-        <div class="col-md-4 why-card">
-          <span class="why-number">01</span>
-          <p class="why-text">Strategic thinking before production begins</p>
-        </div>
-        <div class="col-md-4 why-card">
-          <span class="why-number">02</span>
-          <p class="why-text">Trusted communications and storytelling expertise since 1999</p>
-        </div>
-        <div class="col-md-4 why-card">
-          <span class="why-number">03</span>
-          <p class="why-text">Experience across multiple industries and audiences</p>
-        </div>
-        <div class="col-md-4 why-card">
-          <span class="why-number">04</span>
-          <p class="why-text">Trusted partner for executive and leadership communications</p>
-        </div>
-        <div class="col-md-4 why-card">
-          <span class="why-number">05</span>
-          <p class="why-text">Human-centered storytelling enhanced by emerging AI technologies</p>
-        </div>
-        <div class="col-md-4 why-card">
-          <span class="why-number">06</span>
-          <p class="why-text">Senior-level involvement throughout every project</p>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -471,6 +487,122 @@
     </div>
   </div>
 
+  <!-- WHY CREVO -->
+  <section class="why-section">
+    <div class="container">
+      <div class="why-header">
+        <p class="section-label why-label">Why Crevo</p>
+        <h2 class="section-heading why-heading">When the message matters,<br>the thinking behind it matters more.</h2>
+      </div>
+
+      <div class="row g-0 why-grid">
+        <div class="col-md-4 why-card">
+          <span class="why-number">01</span>
+          <p class="why-text">Strategic thinking before production begins</p>
+        </div>
+        <div class="col-md-4 why-card">
+          <span class="why-number">02</span>
+          <p class="why-text">Trusted communications and storytelling expertise since 1999</p>
+        </div>
+        <div class="col-md-4 why-card">
+          <span class="why-number">03</span>
+          <p class="why-text">Experience across multiple industries and audiences</p>
+        </div>
+        <div class="col-md-4 why-card">
+          <span class="why-number">04</span>
+          <p class="why-text">Trusted partner for executive and leadership communications</p>
+        </div>
+        <div class="col-md-4 why-card">
+          <span class="why-number">05</span>
+          <p class="why-text">Human-centered storytelling enhanced by emerging AI technologies</p>
+        </div>
+        <div class="col-md-4 why-card">
+          <span class="why-number">06</span>
+          <p class="why-text">Senior-level involvement throughout every project</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CREVO + AI -->
+  <section class="ai-section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <div class="col-lg-6">
+          <p class="section-label ai-label">CREVO + AI</p>
+          <h2 class="section-heading ai-heading">Technology is changing how content is created.</h2>
+          <p class="ai-body">We're helping organizations explore how AI can enhance creativity, accelerate production, and unlock new storytelling possibilities—without losing the human insight that makes communication meaningful.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <p class="ai-areas-label">Areas of exploration include:</p>
+          <div class="ai-areas">
+            <span class="ai-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> AI-assisted content creation</span>
+            <span class="ai-chip"><i class="fa-solid fa-clapperboard"></i> AI-powered commercials</span>
+            <span class="ai-chip"><i class="fa-solid fa-microphone-lines"></i> Executive communications</span>
+            <span class="ai-chip"><i class="fa-solid fa-pen-nib"></i> Brand storytelling</span>
+            <span class="ai-chip"><i class="fa-solid fa-bullhorn"></i> Campaign development</span>
+            <span class="ai-chip"><i class="fa-solid fa-microchip"></i> Emerging creative technologies</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+
+      <div class="projects-header">
+        <p class="section-label projects-label">Our Work</p>
+        <h2 class="section-heading projects-heading">Selected Projects</h2>
+      </div>
+
+      <div class="project-row row align-items-center g-4 g-lg-5">
+        <div class="col-lg-5">
+          <div class="project-image-wrapper">
+            <img src="images/prj12.jpg" alt="Project 1">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="project-number">01</span>
+          <h3 class="project-title">Project 1</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa, laborum, eveniet iusto corporis recusandae eos iste maiores illum neque nisi aperiam aut corrupti ipsam alias quod quae consectetur eligendi. Nam, quae! Libero, perferendis ullam! Ex, molestiae qui deserunt, ipsa officiis exercitationem quisquam, dolorem ipsum soluta earum rem maiores dignissimos.</p>
+        </div>
+      </div>
+
+      <div class="project-row row align-items-center g-4 g-lg-5 flex-lg-row-reverse">
+        <div class="col-lg-5">
+          <div class="project-image-wrapper">
+            <img src="images/prj23.jpg" alt="Project 2">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="project-number">02</span>
+          <h3 class="project-title">Project 2</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa, laborum, eveniet iusto corporis recusandae eos iste maiores illum neque nisi aperiam aut corrupti ipsam alias quod quae consectetur eligendi. Nam, quae! Libero, perferendis ullam! Ex, molestiae qui deserunt, ipsa officiis exercitationem quisquam, dolorem ipsum soluta earum rem maiores dignissimos.</p>
+        </div>
+      </div>
+
+      <div class="project-row row align-items-center g-4 g-lg-5">
+        <div class="col-lg-5">
+          <div class="project-image-wrapper">
+            <img src="images/prj12.jpg" alt="Project 3">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="project-number">03</span>
+          <h3 class="project-title">Project 3</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa, laborum, eveniet iusto corporis recusandae eos iste maiores illum neque nisi aperiam aut corrupti ipsam alias quod quae consectetur eligendi. Nam, quae! Libero, perferendis ullam! Ex, molestiae qui deserunt, ipsa officiis exercitationem quisquam, dolorem ipsum soluta earum rem maiores dignissimos.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- TESTIMONIALS -->
   <section class="testimonials-section">
     <div class="container">
@@ -553,86 +685,8 @@
     </div>
   </section>
 
-  <!-- CREVO + AI -->
-  <section class="ai-section">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-
-        <div class="col-lg-6">
-          <p class="section-label ai-label">CREVO + AI</p>
-          <h2 class="section-heading ai-heading">Technology is changing how content is created.</h2>
-          <p class="ai-body">We're helping organizations explore how AI can enhance creativity, accelerate production, and unlock new storytelling possibilities—without losing the human insight that makes communication meaningful.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <p class="ai-areas-label">Areas of exploration include:</p>
-          <div class="ai-areas">
-            <span class="ai-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> AI-assisted content creation</span>
-            <span class="ai-chip"><i class="fa-solid fa-clapperboard"></i> AI-powered commercials</span>
-            <span class="ai-chip"><i class="fa-solid fa-microphone-lines"></i> Executive communications</span>
-            <span class="ai-chip"><i class="fa-solid fa-pen-nib"></i> Brand storytelling</span>
-            <span class="ai-chip"><i class="fa-solid fa-bullhorn"></i> Campaign development</span>
-            <span class="ai-chip"><i class="fa-solid fa-microchip"></i> Emerging creative technologies</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects-section">
-    <div class="container">
-
-      <div class="projects-header">
-        <p class="section-label projects-label">Our Work</p>
-        <h2 class="section-heading projects-heading">Selected Projects</h2>
-      </div>
-
-      <div class="project-row row align-items-center g-4 g-lg-5">
-        <div class="col-lg-5">
-          <div class="project-image-wrapper">
-            <img src="images/prj12.jpg" alt="Project 1">
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <span class="project-number">01</span>
-          <h3 class="project-title">Project 1</h3>
-          <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa, laborum, eveniet iusto corporis recusandae eos iste maiores illum neque nisi aperiam aut corrupti ipsam alias quod quae consectetur eligendi. Nam, quae! Libero, perferendis ullam! Ex, molestiae qui deserunt, ipsa officiis exercitationem quisquam, dolorem ipsum soluta earum rem maiores dignissimos.</p>
-        </div>
-      </div>
-
-      <div class="project-row row align-items-center g-4 g-lg-5 flex-lg-row-reverse">
-        <div class="col-lg-5">
-          <div class="project-image-wrapper">
-            <img src="images/prj23.jpg" alt="Project 2">
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <span class="project-number">02</span>
-          <h3 class="project-title">Project 2</h3>
-          <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa, laborum, eveniet iusto corporis recusandae eos iste maiores illum neque nisi aperiam aut corrupti ipsam alias quod quae consectetur eligendi. Nam, quae! Libero, perferendis ullam! Ex, molestiae qui deserunt, ipsa officiis exercitationem quisquam, dolorem ipsum soluta earum rem maiores dignissimos.</p>
-        </div>
-      </div>
-
-      <div class="project-row row align-items-center g-4 g-lg-5">
-        <div class="col-lg-5">
-          <div class="project-image-wrapper">
-            <img src="images/prj12.jpg" alt="Project 3">
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <span class="project-number">03</span>
-          <h3 class="project-title">Project 3</h3>
-          <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa, laborum, eveniet iusto corporis recusandae eos iste maiores illum neque nisi aperiam aut corrupti ipsam alias quod quae consectetur eligendi. Nam, quae! Libero, perferendis ullam! Ex, molestiae qui deserunt, ipsa officiis exercitationem quisquam, dolorem ipsum soluta earum rem maiores dignissimos.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
   <!-- CONTACT -->
-  <section class="contact-section">
+  <section class="contact-section" id="contact">
     <div class="container">
       <div class="row g-5 align-items-stretch">
 
@@ -669,7 +723,7 @@
 
         <!-- Right: form card -->
         <div class="col-lg-7">
-          <form class="contact-form" action="">
+          <form class="contact-form" action="https://formspree.io/f/mojovkea" method="post">
             <div class="contact-field-row">
               <div class="contact-field">
                 <label for="contactName">Name</label>
@@ -696,6 +750,69 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Brand + blurb -->
+        <div class="col-lg-4">
+          <img src="images/crevo-logo.png" alt="CREVO" class="footer-logo">
+          <p class="footer-blurb">Strategic storytelling and visual communications since 1999—helping organizations, brands, and leaders communicate with clarity, purpose, and impact.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigate -->
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Navigate</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Brand Storytelling</a></li>
+            <li><a href="#services">Corporate Communications</a></li>
+            <li><a href="#services">Executive Messaging</a></li>
+            <li><a href="#services">Photography &amp; Video</a></li>
+            <li><a href="#services">AI-Powered Content</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3">
+          <h4 class="footer-heading">Get in Touch</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-envelope"></i> <a href="mailto:hello@crevo.ph">hello@crevo.ph</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+6320000000">+63 2 0000 0000</a></li>
+            <li><i class="fas fa-location-dot"></i> <span>Metro Manila, Philippines</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 CREVO (Creative Evolution). All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- ── Offcanvas ── -->
   <div
     class="offcanvas offcanvas-end"
@@ -713,11 +830,11 @@
 
       <!-- Nav links -->
       <ul class="offcanvas-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <!-- Social icons -->
