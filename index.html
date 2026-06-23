@@ -4,8 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CREVO PH</title>
+  <link rel="icon" type="image/png" href="images/crevo-logo.png">
+  <link rel="apple-touch-icon" href="images/crevo-logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -15,7 +22,7 @@
     <div class="container-fluid px-0">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#">CREVO<span class="dot">.</span></a>
+      <a class="navbar-brand" href="#"><img src="images/crevo-logo.png" alt="CREVO" class="navbar-logo"></a>
 
       <!-- Right side: social icons + hamburger -->
       <div class="d-flex align-items-center social-icons">
@@ -70,7 +77,7 @@
 
   <!-- INDUSTRIES WE SERVE -->
   <section class="industries-section">
-    <p class="industries-label">Industries We Serve</p>
+    <p class="section-label industries-label">Industries We Serve</p>
     <p class="industries-quote">"Since 1999, CREVO has partnered with organizations ranging from startups to established national and multinational brands."</p>
 
     <div class="marquee-wrapper">
@@ -104,8 +111,8 @@
 
         <!-- Left: label + heading -->
         <div class="col-lg-5">
-          <p class="about-label">About Crevo</p>
-          <h2 class="about-heading">We Help Organizations Shape Stories That Matter</h2>
+          <p class="section-label about-label">About Crevo</p>
+          <h2 class="section-heading about-heading">We Help Organizations Shape Stories That Matter</h2>
         </div>
 
         <!-- Right: body copy -->
@@ -140,12 +147,126 @@
     </div>
   </section>
 
+  <!-- CORE SERVICES -->
+  <section class="services-section">
+    <div class="container">
+
+      <div class="services-header">
+        <p class="section-label services-label">Core Services</p>
+        <h2 class="section-heading services-heading">We combine strategic thinking, storytelling expertise, and visual communications to help organizations achieve their communication objectives.</h2>
+      </div>
+
+      <div class="row g-0 services-grid">
+
+        <div class="col-md-6 col-lg-4 services-card">
+          <div class="services-card-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h3 class="services-card-title">Brand Storytelling</h3>
+          <p class="services-card-body">Developing compelling stories that communicate your brand's purpose, values, and unique position in the market while building deeper connections with your audience.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 services-card">
+          <div class="services-card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <h3 class="services-card-title">Narrative Direction</h3>
+          <p class="services-card-body">Helping organizations define what they want to say, how they want to be perceived, and how their message should evolve across different platforms and audiences.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 services-card">
+          <div class="services-card-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3 class="services-card-title">Visual Strategy</h3>
+          <p class="services-card-body">Aligning creative visuals, content, and production approaches with business objectives to ensure every communication serves a strategic purpose.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 services-card">
+          <div class="services-card-icon"><i class="fa-solid fa-building"></i></div>
+          <h3 class="services-card-title">Corporate Communications</h3>
+          <p class="services-card-body">Creating internal and external communication materials that strengthen organizational messaging, stakeholder engagement, and brand consistency.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 services-card">
+          <div class="services-card-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+          <h3 class="services-card-title">Executive Messaging</h3>
+          <p class="services-card-body">Helping founders, executives, and leadership teams communicate vision, strategy, and thought leadership with clarity, confidence, and authenticity.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 services-card">
+          <div class="services-card-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3 class="services-card-title">Commercial &amp; Campaign Development</h3>
+          <p class="services-card-body">Developing creative concepts and content strategies for marketing campaigns, product launches, brand initiatives, and audience engagement programs.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 services-card">
+          <div class="services-card-icon"><i class="fa-solid fa-film"></i></div>
+          <h3 class="services-card-title">Documentary Storytelling</h3>
+          <p class="services-card-body">Capturing authentic stories, milestones, journeys, and human experiences through documentary-style narratives that create emotional connection and credibility.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 services-card">
+          <div class="services-card-icon"><i class="fa-solid fa-camera"></i></div>
+          <h3 class="services-card-title">Photography &amp; Video Production</h3>
+          <p class="services-card-body">End-to-end visual content production that brings stories to life through photography, video, interviews, events, and branded content.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 services-card">
+          <div class="services-card-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3 class="services-card-title">AI-Powered Creative Content</h3>
+          <p class="services-card-body">Leveraging emerging AI technologies to accelerate content creation, enhance creative possibilities, and develop scalable content solutions while maintaining strategic storytelling at the core.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE HELP SOLVE -->
+  <section class="solve-section">
+    <div class="container">
+
+      <div class="solve-header">
+        <p class="section-label solve-label">What We Help Solve</p>
+        <h2 class="section-heading solve-heading">Common Challenges We Help Solve</h2>
+      </div>
+
+      <div class="row g-0 solve-grid">
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Clarifying your organization's story, positioning, and purpose</p>
+        </div>
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Communicating complex ideas with clarity and impact</p>
+        </div>
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Strengthening executive, leadership, and stakeholder communications</p>
+        </div>
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Creating meaningful content that engages audiences and drives action</p>
+        </div>
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Building trust through authentic storytelling and visual communication</p>
+        </div>
+
+        <div class="col-md-6 solve-item">
+          <div class="solve-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <p class="solve-text">Exploring AI-powered content creation while preserving human connection</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- WHY CREVO -->
   <section class="why-section">
     <div class="container">
       <div class="why-header">
-        <p class="why-label">Why Crevo</p>
-        <h2 class="why-heading">When the message matters,<br>the thinking behind it matters more.</h2>
+        <p class="section-label why-label">Why Crevo</p>
+        <h2 class="section-heading why-heading">When the message matters,<br>the thinking behind it matters more.</h2>
       </div>
 
       <div class="row g-0 why-grid">
@@ -178,12 +299,184 @@
     </div>
   </section>
 
+  <!-- HOW WE WORK -->
+  <section class="process-section">
+    <div class="container">
+
+      <div class="process-header">
+        <p class="section-label process-label">How We Work</p>
+        <h2 class="section-heading process-heading">Our Engagement Process</h2>
+        <p class="process-intro">We believe great content begins with understanding—not production.</p>
+      </div>
+
+      <div class="process-list">
+
+        <button class="process-step" data-bs-toggle="modal" data-bs-target="#modalStep1">
+          <div class="process-step-left">
+            <span class="process-step-number">01</span>
+            <span class="process-step-title">Discovery &amp; Alignment</span>
+          </div>
+          <i class="fa-solid fa-arrow-right process-step-arrow"></i>
+        </button>
+
+        <button class="process-step" data-bs-toggle="modal" data-bs-target="#modalStep2">
+          <div class="process-step-left">
+            <span class="process-step-number">02</span>
+            <span class="process-step-title">Narrative &amp; Strategy</span>
+          </div>
+          <i class="fa-solid fa-arrow-right process-step-arrow"></i>
+        </button>
+
+        <button class="process-step" data-bs-toggle="modal" data-bs-target="#modalStep3">
+          <div class="process-step-left">
+            <span class="process-step-number">03</span>
+            <span class="process-step-title">Content Development</span>
+          </div>
+          <i class="fa-solid fa-arrow-right process-step-arrow"></i>
+        </button>
+
+        <button class="process-step" data-bs-toggle="modal" data-bs-target="#modalStep4">
+          <div class="process-step-left">
+            <span class="process-step-number">04</span>
+            <span class="process-step-title">Refinement &amp; Delivery</span>
+          </div>
+          <i class="fa-solid fa-arrow-right process-step-arrow"></i>
+        </button>
+
+        <button class="process-step" data-bs-toggle="modal" data-bs-target="#modalStep5">
+          <div class="process-step-left">
+            <span class="process-step-number">05</span>
+            <span class="process-step-title">Long-Term Partnership</span>
+          </div>
+          <i class="fa-solid fa-arrow-right process-step-arrow"></i>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK — MODALS -->
+
+  <!-- Step 1 -->
+  <div class="modal fade process-modal" id="modalStep1" tabindex="-1" aria-labelledby="modalStep1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-step-number">01</span>
+            <h5 class="modal-title" id="modalStep1Label">Discovery &amp; Alignment</h5>
+          </div>
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-lead">We start by understanding your organization, objectives, audience, challenges, and communication goals.</p>
+          <h6 class="modal-sub-heading">Key Questions</h6>
+          <ul class="modal-list">
+            <li>What are you trying to achieve?</li>
+            <li>Who are you speaking to?</li>
+            <li>What action do you want your audience to take?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="modal fade process-modal" id="modalStep2" tabindex="-1" aria-labelledby="modalStep2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-step-number">02</span>
+            <h5 class="modal-title" id="modalStep2Label">Narrative &amp; Strategy</h5>
+          </div>
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-lead">Before cameras roll, we help define the story. Together, we identify the core message, narrative structure, creative direction, and communication approach that will best support your objectives.</p>
+          <h6 class="modal-sub-heading">Deliverables May Include</h6>
+          <ul class="modal-list">
+            <li>Story framework</li>
+            <li>Messaging direction</li>
+            <li>Creative concepts</li>
+            <li>Visual strategy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="modal fade process-modal" id="modalStep3" tabindex="-1" aria-labelledby="modalStep3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-step-number">03</span>
+            <h5 class="modal-title" id="modalStep3Label">Content Development</h5>
+          </div>
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-lead">Once the strategy is clear, we move into planning and production. Depending on the project, this may include:</p>
+          <ul class="modal-list">
+            <li>Scriptwriting</li>
+            <li>Storyboarding</li>
+            <li>Photography</li>
+            <li>Video production</li>
+            <li>Interviews</li>
+            <li>Documentary coverage</li>
+            <li>AI-assisted content creation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 4 -->
+  <div class="modal fade process-modal" id="modalStep4" tabindex="-1" aria-labelledby="modalStep4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-step-number">04</span>
+            <h5 class="modal-title" id="modalStep4Label">Refinement &amp; Delivery</h5>
+          </div>
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-lead">We refine the content to ensure it aligns with your goals, brand standards, and intended audience experience.</p>
+          <p class="modal-body-text">The final deliverables are optimized for their intended platforms and communication objectives.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 5 -->
+  <div class="modal fade process-modal" id="modalStep5" tabindex="-1" aria-labelledby="modalStep5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-step-number">05</span>
+            <h5 class="modal-title" id="modalStep5Label">Long-Term Partnership</h5>
+          </div>
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-lead">Many of our clients have worked with us for years because we go beyond production.</p>
+          <p class="modal-body-text">We become a strategic creative partner who understands your business, audience, and evolving communication needs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- TESTIMONIALS -->
   <section class="testimonials-section">
     <div class="container">
       <div class="testimonials-header">
-        <p class="testimonials-label">Testimonials</p>
-        <h2 class="testimonials-heading">Trusted by leaders who care<br>how their story is told.</h2>
+        <p class="section-label testimonials-label">Testimonials</p>
+        <h2 class="section-heading testimonials-heading">Trusted by leaders who care<br>how their story is told.</h2>
       </div>
 
       <div class="row g-4">
@@ -260,6 +553,84 @@
     </div>
   </section>
 
+  <!-- CREVO + AI -->
+  <section class="ai-section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <div class="col-lg-6">
+          <p class="section-label ai-label">CREVO + AI</p>
+          <h2 class="section-heading ai-heading">Technology is changing how content is created.</h2>
+          <p class="ai-body">We're helping organizations explore how AI can enhance creativity, accelerate production, and unlock new storytelling possibilities—without losing the human insight that makes communication meaningful.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <p class="ai-areas-label">Areas of exploration include:</p>
+          <div class="ai-areas">
+            <span class="ai-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> AI-assisted content creation</span>
+            <span class="ai-chip"><i class="fa-solid fa-clapperboard"></i> AI-powered commercials</span>
+            <span class="ai-chip"><i class="fa-solid fa-microphone-lines"></i> Executive communications</span>
+            <span class="ai-chip"><i class="fa-solid fa-pen-nib"></i> Brand storytelling</span>
+            <span class="ai-chip"><i class="fa-solid fa-bullhorn"></i> Campaign development</span>
+            <span class="ai-chip"><i class="fa-solid fa-microchip"></i> Emerging creative technologies</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section">
+    <div class="container">
+
+      <div class="projects-header">
+        <p class="section-label projects-label">Our Work</p>
+        <h2 class="section-heading projects-heading">Selected Projects</h2>
+      </div>
+
+      <div class="project-row row align-items-center g-4 g-lg-5">
+        <div class="col-lg-5">
+          <div class="project-image-wrapper">
+            <img src="images/prj12.jpg" alt="Project 1">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="project-number">01</span>
+          <h3 class="project-title">Project 1</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa, laborum, eveniet iusto corporis recusandae eos iste maiores illum neque nisi aperiam aut corrupti ipsam alias quod quae consectetur eligendi. Nam, quae! Libero, perferendis ullam! Ex, molestiae qui deserunt, ipsa officiis exercitationem quisquam, dolorem ipsum soluta earum rem maiores dignissimos.</p>
+        </div>
+      </div>
+
+      <div class="project-row row align-items-center g-4 g-lg-5 flex-lg-row-reverse">
+        <div class="col-lg-5">
+          <div class="project-image-wrapper">
+            <img src="images/prj23.jpg" alt="Project 2">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="project-number">02</span>
+          <h3 class="project-title">Project 2</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa, laborum, eveniet iusto corporis recusandae eos iste maiores illum neque nisi aperiam aut corrupti ipsam alias quod quae consectetur eligendi. Nam, quae! Libero, perferendis ullam! Ex, molestiae qui deserunt, ipsa officiis exercitationem quisquam, dolorem ipsum soluta earum rem maiores dignissimos.</p>
+        </div>
+      </div>
+
+      <div class="project-row row align-items-center g-4 g-lg-5">
+        <div class="col-lg-5">
+          <div class="project-image-wrapper">
+            <img src="images/prj12.jpg" alt="Project 3">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="project-number">03</span>
+          <h3 class="project-title">Project 3</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa, laborum, eveniet iusto corporis recusandae eos iste maiores illum neque nisi aperiam aut corrupti ipsam alias quod quae consectetur eligendi. Nam, quae! Libero, perferendis ullam! Ex, molestiae qui deserunt, ipsa officiis exercitationem quisquam, dolorem ipsum soluta earum rem maiores dignissimos.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section class="contact-section">
     <div class="container">
@@ -267,8 +638,8 @@
 
         <!-- Left: intro + contact details -->
         <div class="col-lg-5">
-          <p class="contact-label">Let's Connect</p>
-          <h2 class="contact-heading">Let's have a conversation.</h2>
+          <p class="section-label contact-label">Let's Connect</p>
+          <h2 class="section-heading contact-heading">Let's have a conversation.</h2>
           <p class="contact-body">Whether you're developing a campaign, launching an initiative, creating executive communications, or exploring AI-powered content, we'd love to learn more about your goals. Let's create something meaningful together.</p>
 
           <ul class="contact-details">
