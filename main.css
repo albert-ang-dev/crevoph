@@ -1,3 +1,11 @@
+  @font-face {
+    font-family: "garretbook";
+    src: url("fonts/garet.book.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
     html, body {
       overflow-x: hidden;
       max-width: 100%;
@@ -22,11 +30,14 @@
       color: #1a1a1a;
       letter-spacing: -0.01em;
     }
-    .navbar-brand span {
-      color: #1a1a1a;
-    }
+    .navbar-brand span,
     .navbar-brand .dot {
       color: #1a1a1a;
+    }
+    .navbar-logo {
+      height: 52px;
+      width: auto;
+      display: block;
     }
 
     /* ── Social icons ── */
@@ -65,7 +76,7 @@
       transition: background-color 0.2s;
     }
 
-    /* ── Offcanvas panel ──   */
+    /* ── Offcanvas panel ── */
     .offcanvas.offcanvas-end {
       width: 280px;
       background-color: #1a1a1a;
@@ -119,7 +130,7 @@
       font-size: 0.9rem;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       transition: color 0.2s;
     }
     .offcanvas-nav a:hover {
@@ -148,7 +159,8 @@
       background-color: #f0f0f0;
     }
     .hero-section h1 {
-      font-family: Georgia, serif;
+      /* font-family: Georgia, serif; */
+      font-family: "Poppins",Georgia;
       font-size: 2.6rem;
       font-weight: 700;
       color: #1a1a1a;
@@ -156,7 +168,7 @@
       margin-bottom: 1.25rem;
     }
     .hero-section p {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 1rem;
       color: #555;
       line-height: 1.7;
@@ -168,7 +180,7 @@
       color: #fff;
       border: none;
       padding: 0.75rem 1.75rem;
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.9rem;
       font-weight: 600;
       border-radius: 4px;
@@ -184,7 +196,7 @@
       background: none;
       border: none;
       color: #1a1a1a;
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.9rem;
       font-weight: 600;
       text-decoration: none;
@@ -205,10 +217,10 @@
       font-size: 0.7rem;
     }
     .btn-hero-secondary:hover {
-      color: #3a7d60;
+      color: #B27F22;
     }
     .btn-hero-secondary:hover .play-icon {
-      border-color: #3a7d60;
+      border-color: #B27F22;
     }
 
     /* Image + stats card */
@@ -236,17 +248,58 @@
       gap: 2rem;
     }
     .hero-stats-card .stat-value {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 1.6rem;
       font-weight: 700;
-      color: #3a7d60;
+      color: #B27F22;
       line-height: 1.1;
     }
     .hero-stats-card .stat-label {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.78rem;
       color: #888;
       margin-top: 0.2rem;
+    }
+
+    /* ── Shared section label ── */
+    .section-label {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #c87533;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .industries-label {
+      text-align: center;
+    }
+    .about-label,
+    .contact-label {
+      margin-bottom: 1rem;
+    }
+
+    /* ── Shared section heading ── */
+    .section-heading {
+      font-family: "Poppins", Georgia, serif;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+    .why-heading,
+    .testimonials-heading {
+      font-size: 2rem;
+      line-height: 1.3;
+      margin: 0;
+    }
+    .about-heading {
+      font-size: 2.1rem;
+      line-height: 1.25;
+      margin: 0;
+    }
+    .contact-heading {
+      font-size: 2.1rem;
+      line-height: 1.25;
+      margin: 0 0 1.25rem;
     }
 
     /* ── Industries We Serve ── */
@@ -254,18 +307,8 @@
       padding: 4rem 0 3rem;
       background-color: #f0f0f0;
     }
-    .industries-label {
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #c87533;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 0.75rem;
-    }
     .industries-quote {
-      font-family: Georgia, serif;
+      font-family: "garretbook", Georgia, serif;
       font-size: 1rem;
       font-style: italic;
       color: #333;
@@ -290,7 +333,7 @@
       animation-play-state: paused;
     }
     .marquee-item {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.92rem;
       color: #444;
       white-space: nowrap;
@@ -311,6 +354,264 @@
       100% { transform: translateX(0%); }
     }
 
+    /* ── Core Services ── */
+    .services-section {
+      padding: 5rem 0 6rem;
+      background-color: #f0f0f0;
+    }
+    .services-header {
+      max-width: 680px;
+      margin-bottom: 3.5rem;
+    }
+    .services-heading {
+      font-size: 1.15rem;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #555;
+      margin: 0;
+      font-family: "garretbook", Arial, sans-serif;
+    }
+    .services-grid {
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+    }
+    .services-card {
+      padding: 2.25rem 2rem 2.5rem;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      transition: background-color 0.2s;
+    }
+    .services-card:hover {
+      background-color: #e8e8e8;
+    }
+    .services-card-icon {
+      font-size: 1.25rem;
+      color: #B27F22;
+      margin-bottom: 1.1rem;
+    }
+    .services-card-title {
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 0.65rem;
+      line-height: 1.3;
+    }
+    .services-card-body {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.88rem;
+      color: #555;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* ── What We Help Solve ── */
+    .solve-section {
+      padding: 5rem 0 6rem;
+      background-color: #f0f0f0;
+    }
+    .solve-header {
+      max-width: 580px;
+      margin-bottom: 3rem;
+    }
+    .solve-heading {
+      font-size: 2rem;
+      line-height: 1.3;
+      margin: 0;
+    }
+    .solve-grid {
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+    }
+    .solve-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.1rem;
+      padding: 1.75rem 2rem;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+    .solve-icon {
+      flex-shrink: 0;
+      color: #B27F22;
+      font-size: 1.05rem;
+      margin-top: 0.1rem;
+    }
+    .solve-text {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.93rem;
+      color: #333;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* ── How We Work ── */
+    .process-section {
+      padding: 5rem 0 6rem;
+      background-color: #1a1a1a;
+    }
+    .process-header {
+      max-width: 620px;
+      margin-bottom: 3rem;
+    }
+    .process-section .section-label {
+      color: #B27F22;
+    }
+    .process-heading {
+      font-size: 2rem;
+      line-height: 1.3;
+      margin: 0 0 0.75rem;
+      color: #f0f0f0;
+    }
+    .process-intro {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.95rem;
+      color: #888;
+      line-height: 1.7;
+      margin: 0;
+    }
+    .process-list {
+      border-top: 1px solid #2e2e2e;
+    }
+    .process-step {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #2e2e2e;
+      padding: 1.6rem 0;
+      cursor: pointer;
+      text-align: left;
+      transition: padding-left 0.2s;
+    }
+    .process-step:hover {
+      padding-left: 0.5rem;
+    }
+    .process-step:hover .process-step-number {
+      color: #B27F22;
+    }
+    .process-step:hover .process-step-title {
+      color: #fff;
+    }
+    .process-step:hover .process-step-arrow {
+      color: #B27F22;
+      transform: translateX(4px);
+    }
+    .process-step-left {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .process-step-number {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #B27F22;
+      letter-spacing: 0.08em;
+      transition: color 0.2s;
+    }
+    .process-step-title {
+      font-family: Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #c8c8c8;
+      transition: color 0.2s;
+    }
+    .process-step-arrow {
+      color: #444;
+      font-size: 0.9rem;
+      transition: color 0.2s, transform 0.2s;
+    }
+
+    /* ── Process Modals ── */
+    .process-modal .modal-content {
+      background-color: #fff;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .process-modal .modal-header {
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #2e2e2e;
+      padding: 1.75rem 2rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .modal-step-number {
+      display: block;
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #B27F22;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+    .process-modal .modal-title {
+      font-family: Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #f0f0f0;
+      margin: 0;
+    }
+    .process-modal .modal-body {
+      padding: 2rem;
+    }
+    .modal-lead {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.97rem;
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .modal-body-text {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.8;
+      margin: 0;
+    }
+    .modal-sub-heading {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #B27F22;
+      margin-bottom: 0.75rem;
+    }
+    .modal-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .modal-list li {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.93rem;
+      color: #444;
+      line-height: 1.6;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .modal-list li::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #B27F22;
+      flex-shrink: 0;
+    }
+    .modal-list li:last-child {
+      border-bottom: none;
+    }
+
     /* ── Why Crevo ── */
     .why-section {
       padding: 5rem 0 6rem;
@@ -319,23 +620,6 @@
     .why-header {
       max-width: 580px;
       margin-bottom: 3.5rem;
-    }
-    .why-label {
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #c87533;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 0.75rem;
-    }
-    .why-heading {
-      font-family: Georgia, serif;
-      font-size: 2rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      line-height: 1.3;
-      margin: 0;
     }
     .why-grid {
       border-top: 1px solid #ccc;
@@ -352,15 +636,15 @@
     }
     .why-number {
       display: block;
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.7rem;
       font-weight: 700;
-      color: #3a7d60;
+      color: #B27F22;
       letter-spacing: 0.08em;
       margin-bottom: 1rem;
     }
     .why-text {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.92rem;
       color: #444;
       line-height: 1.65;
@@ -372,25 +656,8 @@
       padding: 6rem 0;
       background-color: #f0f0f0;
     }
-    .about-label {
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #c87533;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-    .about-heading {
-      font-family: Georgia, serif;
-      font-size: 2.1rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      line-height: 1.25;
-      margin: 0;
-    }
     .about-body {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.95rem;
       color: #555;
       line-height: 1.8;
@@ -430,7 +697,7 @@
     }
     .about-stat-label {
       display: block;
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.78rem;
       color: #888;
       letter-spacing: 0.04em;
@@ -444,23 +711,6 @@
     .testimonials-header {
       max-width: 580px;
       margin-bottom: 3.5rem;
-    }
-    .testimonials-label {
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #c87533;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 0.75rem;
-    }
-    .testimonials-heading {
-      font-family: Georgia, serif;
-      font-size: 2rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      line-height: 1.3;
-      margin: 0;
     }
     .testimonial-card {
       position: relative;
@@ -494,7 +744,7 @@
       margin-bottom: 1.1rem;
     }
     .testimonial-text {
-      font-family: Georgia, serif;
+      font-family: "garretbook", Georgia, serif;
       font-size: 1.02rem;
       font-style: italic;
       color: #333;
@@ -518,7 +768,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.85rem;
       font-weight: 700;
       letter-spacing: 0.03em;
@@ -528,16 +778,134 @@
       flex-direction: column;
     }
     .testimonial-name {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.92rem;
       font-weight: 700;
       color: #1a1a1a;
     }
     .testimonial-role {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.8rem;
       color: #888;
       margin-top: 0.1rem;
+    }
+
+    /* ── CREVO + AI ── */
+    .ai-section {
+      padding: 6rem 0;
+      background-color: #1a1a1a;
+    }
+    .ai-section .section-label {
+      color: #B27F22;
+    }
+    .ai-heading {
+      font-size: 2.1rem;
+      line-height: 1.25;
+      margin: 0 0 1.5rem;
+      color: #f0f0f0;
+    }
+    .ai-body {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.97rem;
+      color: #aaa;
+      line-height: 1.8;
+      margin: 0;
+      max-width: 480px;
+    }
+    .ai-areas-label {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #B27F22;
+      margin-bottom: 1.25rem;
+    }
+    .ai-areas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .ai-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.88rem;
+      color: #e0e0e0;
+      background-color: #262626;
+      border: 1px solid #333;
+      border-radius: 50px;
+      padding: 0.65rem 1.15rem;
+      transition: border-color 0.2s, background-color 0.2s;
+    }
+    .ai-chip i {
+      color: #B27F22;
+      font-size: 0.85rem;
+    }
+    .ai-chip:hover {
+      border-color: #B27F22;
+      background-color: #2e2e2e;
+    }
+
+    /* ── Projects ── */
+    .projects-section {
+      padding: 6rem 0;
+      background-color: #f0f0f0;
+    }
+    .projects-header {
+      max-width: 580px;
+      margin-bottom: 3.5rem;
+    }
+    .projects-heading {
+      font-size: 2rem;
+      line-height: 1.3;
+      margin: 0;
+    }
+    .project-row {
+      padding: 2.5rem 0;
+      border-top: 1px solid #ccc;
+    }
+    .project-row:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+    .project-image-wrapper {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .project-image-wrapper img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .project-image-wrapper:hover img {
+      transform: scale(1.04);
+    }
+    .project-number {
+      display: block;
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #B27F22;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+    }
+    .project-title {
+      font-family: Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+    .project-text {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.93rem;
+      color: #555;
+      line-height: 1.8;
+      margin: 0;
     }
 
     /* ── Contact ── */
@@ -545,25 +913,8 @@
       padding: 6rem 0 7rem;
       background-color: #f0f0f0;
     }
-    .contact-label {
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #c87533;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-    .contact-heading {
-      font-family: Georgia, serif;
-      font-size: 2.1rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      line-height: 1.25;
-      margin: 0 0 1.25rem;
-    }
     .contact-body {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.95rem;
       color: #555;
       line-height: 1.8;
@@ -604,17 +955,17 @@
       flex-direction: column;
     }
     .contact-detail-label {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.7rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #3a7d60;
+      color: #B27F22;
       margin-bottom: 0.15rem;
     }
     .contact-detail-text a,
     .contact-detail-text span:not(.contact-detail-label) {
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.95rem;
       color: #1a1a1a;
       text-decoration: none;
@@ -643,7 +994,7 @@
     }
     .contact-field label {
       display: block;
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -654,7 +1005,7 @@
     .contact-field input,
     .contact-field textarea {
       width: 100%;
-      font-family: Arial, sans-serif;
+      font-family: "garretbook", Arial, sans-serif;
       font-size: 0.92rem;
       color: #1a1a1a;
       background-color: #f7f7f7;
@@ -692,4 +1043,125 @@
       .contact-form {
         padding: 1.75rem;
       }
+    }
+
+    /* ── Footer ── */
+    .site-footer {
+      background-color: #1a1a1a;
+      padding: 4.5rem 0 2rem;
+    }
+    .footer-logo {
+      height: 48px;
+      width: auto;
+      margin-bottom: 1.25rem;
+    }
+    .footer-blurb {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #999;
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 320px;
+    }
+    .footer-social {
+      display: flex;
+      gap: 0.9rem;
+    }
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: #262626;
+      color: #c8c8c8;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .footer-social a:hover {
+      background-color: #B27F22;
+      color: #fff;
+    }
+    .footer-heading {
+      font-family: "Poppins", Georgia, serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #f0f0f0;
+      margin-bottom: 1.25rem;
+    }
+    .footer-links,
+    .footer-contact {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-links li {
+      margin-bottom: 0.7rem;
+    }
+    .footer-links a {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #999;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: #B27F22;
+    }
+    .footer-contact li {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 0.85rem;
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #999;
+    }
+    .footer-contact li i {
+      color: #B27F22;
+      font-size: 0.85rem;
+      width: 16px;
+      text-align: center;
+    }
+    .footer-contact a {
+      color: #999;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-contact a:hover {
+      color: #B27F22;
+    }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 3.5rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid #2e2e2e;
+    }
+    .footer-copy {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.82rem;
+      color: #777;
+      margin: 0;
+    }
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .footer-legal a {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.82rem;
+      color: #777;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-legal a:hover {
+      color: #B27F22;
     }
