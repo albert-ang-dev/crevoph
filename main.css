@@ -6,6 +6,10 @@
   }
 
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     html, body {
       overflow-x: hidden;
       max-width: 100%;
@@ -21,6 +25,12 @@
       background-color: #f0f0f0;
       border-bottom: 1px solid #ddd;
       padding: 0.6rem 1.5rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      width: 100%;
     }
 
     .navbar-brand {
@@ -122,6 +132,7 @@
     .offcanvas-nav li:last-child {
       border-bottom: none;
     }
+    
     .offcanvas-nav a {
       display: block;
       padding: 0.85rem 0;
@@ -156,7 +167,9 @@
     /* ── Hero ── */
     .hero-section {
       padding: 5rem 2rem;
+      padding-top: 8rem;
       background-color: #f0f0f0;
+      margin-top: 2rem;
     }
     .hero-section h1 {
       /* font-family: Georgia, serif; */
