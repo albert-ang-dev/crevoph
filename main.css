@@ -35,7 +35,7 @@
       color: #1a1a1a;
     }
     .navbar-logo {
-      height: 52px;
+      height: 104px;
       width: auto;
       display: block;
     }
@@ -264,7 +264,8 @@
     /* ── Shared section label ── */
     .section-label {
       font-family: "garretbook", Arial, sans-serif;
-      font-size: 0.75rem;
+      /* font-size: 0.75rem; */
+      font-size: 1.5rem; 
       font-weight: 700;
       color: #c87533;
       letter-spacing: 0.1em;
@@ -796,7 +797,8 @@
       background-color: #1a1a1a;
     }
     .ai-section .section-label {
-      color: #B27F22;
+      color: #f1bd5b;
+      font-size: 1.5rem;
     }
     .ai-heading {
       font-size: 2.1rem;
@@ -806,7 +808,8 @@
     }
     .ai-body {
       font-family: "garretbook", Arial, sans-serif;
-      font-size: 0.97rem;
+      font-size: 1.3rem;
+      font-weight: bold;
       color: #aaa;
       line-height: 1.8;
       margin: 0;
@@ -886,24 +889,25 @@
     .project-number {
       display: block;
       font-family: "garretbook", Arial, sans-serif;
-      font-size: 0.72rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #B27F22;
       letter-spacing: 0.08em;
       margin-bottom: 0.75rem;
     }
-    .project-title {
-      font-family: Georgia, serif;
+    .project-title {  /* MAKE IT MORE BOLDER */
+      font-family:"garretbook", Arial, sans-serif;
       font-size: 1.6rem;
-      font-weight: 700;
+      font-weight: bolder; 
       color: #1a1a1a;
       line-height: 1.25;
       margin-bottom: 1rem;
     }
     .project-text {
       font-family: "garretbook", Arial, sans-serif;
-      font-size: 0.93rem;
+      font-size: 1.3rem;
       color: #555;
+      font-weight: bold;
       line-height: 1.8;
       margin: 0;
     }
