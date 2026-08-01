@@ -1,0 +1,320 @@
+  <section class="industries-section">
+    <p class="section-label industries-label">Industries We Serve</p>
+    <p class="industries-quote">"Since 1999, CREVO has partnered with organizations ranging from startups to established national and multinational brands."</p>
+
+    <div class="marquee-wrapper">
+      <!-- Track is duplicated so the loop is seamless -->
+      <div class="marquee-track">
+        <span class="marquee-item">Retail &amp; Consumer Brands</span>
+        <span class="marquee-item">Financial Services &amp; Insurance</span>
+        <span class="marquee-item">Technology &amp; Global Services</span>
+        <span class="marquee-item">Education</span>
+        <span class="marquee-item">Government &amp; Public Sector</span>
+        <span class="marquee-item">Logistics &amp; Maritime</span>
+        <span class="marquee-item">Manufacturing &amp; Industrial Organization</span>
+        <!-- duplicate for seamless loop -->
+        <span class="marquee-item">Retail &amp; Consumer Brands</span>
+        <span class="marquee-item">Financial Services &amp; Insurance</span>
+        <span class="marquee-item">Technology &amp; Global Services</span>
+        <span class="marquee-item">Education</span>
+        <span class="marquee-item">Government &amp; Public Sector</span>
+        <span class="marquee-item">Logistics &amp; Maritime</span>
+        <span class="marquee-item">Manufacturing &amp; Industrial Organization</span>      </div>
+    </div>
+  </section>
+  
+  
+
+
+
+
+
+      <!-- ABOUT JENNIFER -->
+  <section class="founder-section" id="founder">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <!-- Left: portrait -->
+        <div class="col-lg-5">
+          <div class="founder-image-wrapper">
+            <img src="images/jenn.png" alt="Jennifer Chua, Founder of CREVO">
+          </div>
+        </div>
+
+        <!-- Right: bio -->
+        <div class="col-lg-7">
+          <h2 class="section-heading founder-heading">Meet Jennifer Chua</h2>
+          <p class="founder-role">Founder, CREVO</p>
+          <p class="founder-body">Jennifer Chua is a strategic storyteller, creative director, and visual communications professional with nearly three decades of experience helping organizations communicate with clarity, purpose, and impact.</p>
+          <p class="founder-body">Her work spans corporate communications, executive messaging, documentaries, photography, video production, and emerging AI-powered creative initiatives.</p>
+          <p class="founder-body mb-0">Jen combines strategic thinking, creative direction, and hands-on production expertise, helping clients move seamlessly from ideas and concepts to meaningful communication outcomes.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ABOUT CREVO -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+
+        <!-- Left: label, heading, body copy -->
+        <div class="col-lg-6">
+          <div class="about-eyebrow">
+            <span class="about-eyebrow-line"></span>
+            <p class="section-label about-label">About</p>
+          </div>
+          <h2 class="section-heading about-heading">We help organizations shape stories that matter</h2>
+          <p class="about-body">Crevo is a strategic storytelling and visual communications company founded in 1999 by Jennifer Chua in Manila, Philippines.</p>
+          <p class="about-body">For nearly three decades, CREVO has worked quietly behind some of the country's most trusted brands — shaping executive messaging, campaigns, documentaries, photography, and video content for corporations, retailers, financial institutions, government agencies, and more.</p>
+          <p class="about-body mb-0">Today, CREVO pairs that depth of experience with emerging AI technologies — scalable, innovative content that stays human at its core.</p>
+        </div>
+
+        <!-- Right: portrait -->
+        <div class="col-lg-6">
+          <div class="about-portrait">
+            <img src="images/jenn.png" alt="Jennifer Chua, Founder of CREVO">
+            <div class="about-portrait-caption">Jennifer Chua — Editorial Studio Portrait</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Divider stat row
+      <div class="about-stats-row">
+        <div class="about-stat">
+          <span class="about-stat-value">25+</span>
+          <span class="about-stat-label">Years in Business</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-value">150+</span>
+          <span class="about-stat-label">Projects Delivered</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-value">98%</span>
+          <span class="about-stat-label">Client Satisfaction</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-value">8+</span>
+          <span class="about-stat-label">Industries Served</span>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------- -->
+
+  <!-- PROJECTS  go daddy section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+
+      <div class="projects-header">
+        <p class="section-label projects-label">Our Work</p>
+        <h2 class="section-heading projects-heading">Selected Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card project-card-a">
+          <div class="project-card-body">
+            <span class="project-number">01</span>
+            <h3 class="project-title">Project 1</h3>
+            <p class="project-text">Strategic storytelling that repositioned the brand across every touchpoint.</p>
+          </div>
+          <div class="project-card-media">
+            <img src="images/prj12.jpg" alt="Project 1">
+          </div>
+        </article>
+
+        <article class="project-card project-card-b">
+          <div class="project-card-body">
+            <span class="project-number">02</span>
+            <h3 class="project-title">Project 2</h3>
+            <p class="project-text">Executive messaging and campaign visuals built for long-term impact.</p>
+          </div>
+          <div class="project-card-media">
+            <img src="images/prj23.jpg" alt="Project 2">
+          </div>
+        </article>
+
+        <article class="project-card project-card-a">
+          <div class="project-card-body">
+            <span class="project-number">03</span>
+            <h3 class="project-title">Project 3</h3>
+            <p class="project-text">A documentary-style production capturing the story behind the brand.</p>
+          </div>
+          <div class="project-card-media">
+            <img src="images/puzzle.jpg" alt="Project 3">
+          </div>
+        </article>
+
+        <article class="project-card project-card-b">
+          <div class="project-card-body">
+            <span class="project-number">04</span>
+            <h3 class="project-title">Project 4</h3>
+            <p class="project-text">A brand refresh spanning identity, photography, and digital presence.</p>
+          </div>
+          <div class="project-card-media">
+            <img src="images/prj12.jpg" alt="Project 4">
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<!-- PROJECT SECTIONS -->
+  <section class="showcase-section">
+    <div class="showcase-panel">
+      <h2 class="showcase-heading">From Our Projects</h2>
+
+      <div class="showcase-row">
+        <button type="button" class="showcase-card" data-bs-toggle="modal" data-bs-target="#showcaseVideoModal" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" aria-label="Play project video 1">
+          <img src="images/prj12.jpg" alt="Project video 1">
+          <span class="showcase-play-icon"><i class="fas fa-play"></i></span>
+        </button>
+
+        <button type="button" class="showcase-card" data-bs-toggle="modal" data-bs-target="#showcaseVideoModal" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4" aria-label="Play project video 2">
+          <img src="images/jenn.png" alt="Project video 2">
+          <span class="showcase-play-icon"><i class="fas fa-play"></i></span>
+        </button>
+
+        <button type="button" class="showcase-card" data-bs-toggle="modal" data-bs-target="#showcaseVideoModal" data-video-src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" aria-label="Play project video 3">
+          <img src="images/puzzle.jpg" alt="Project video 3">
+          <span class="showcase-play-icon"><i class="fas fa-play"></i></span>
+        </button>
+
+        <button type="button" class="showcase-card" data-bs-toggle="modal" data-bs-target="#showcaseVideoModal" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" aria-label="Play project video 4">
+          <img src="images/prj23.jpg" alt="Project video 4">
+          <span class="showcase-play-icon"><i class="fas fa-play"></i></span>
+        </button>
+
+        <button type="button" class="showcase-card" data-bs-toggle="modal" data-bs-target="#showcaseVideoModal" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4" aria-label="Play project video 5">
+          <img src="images/prj12.jpg" alt="Project video 5">
+          <span class="showcase-play-icon"><i class="fas fa-play"></i></span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Project Showcase Video Modal -->
+  <div class="modal fade process-modal video-modal" id="showcaseVideoModal" tabindex="-1" aria-labelledby="showcaseVideoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="showcaseVideoModalLabel">Project Showcase</h5>
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+          <video id="showcaseVideo" controls>
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="testimonials-header">
+        <p class="section-label testimonials-label">Testimonials</p>
+        <h2 class="section-heading testimonials-heading"><span class="nowrap-line">Trusted by leaders who care</span><br>how their story is told</h2>
+      </div>
+
+      <div class="testimonials-carousel" data-autoplay="6000">
+        <div class="testimonial-viewport">
+          <div class="testimonial-track">
+
+            <div class="testimonial-slide">
+              <figure class="testimonial-card">
+                <i class="fas fa-quote-right testimonial-quote-mark"></i>
+                <blockquote class="testimonial-text">CREVO transformed the way we communicate with our stakeholders. Their strategic thinking elevated our annual campaign far beyond what we imagined possible.</blockquote>
+                <figcaption class="testimonial-author">
+                
+                  <span class="testimonial-author-info">
+                    <span class="testimonial-name">Maria Reyes</span>
+                    <span class="testimonial-role">VP of Communications, Apex Financial</span>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="testimonial-slide">
+              <figure class="testimonial-card">
+                <i class="fas fa-quote-right testimonial-quote-mark"></i>
+                <blockquote class="testimonial-text">Working with the CREVO team felt like a true partnership. They captured our brand voice perfectly and delivered executive messaging that genuinely resonated.</blockquote>
+                <figcaption class="testimonial-author">
+                 
+                  <span class="testimonial-author-info">
+                    <span class="testimonial-name">James Lim</span>
+                    <span class="testimonial-role">CEO, Northwind Technologies</span>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="testimonial-slide">
+              <figure class="testimonial-card">
+                <i class="fas fa-quote-right testimonial-quote-mark"></i>
+                <blockquote class="testimonial-text">Their blend of human-centered storytelling and AI-powered content gave us a scalable way to produce work without ever losing our authentic voice.</blockquote>
+                <figcaption class="testimonial-author">
+                  <span class="testimonial-author-info">
+                    <span class="testimonial-name">Sofia Cruz</span>
+                    <span class="testimonial-role">Marketing Director, Bloom Retail Group</span>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="testimonial-slide">
+              <figure class="testimonial-card">
+                <i class="fas fa-quote-right testimonial-quote-mark"></i>
+                <blockquote class="testimonial-text">Nearly three decades of experience shows in every detail. CREVO produced a documentary that told our organization's story with clarity, warmth, and real impact.</blockquote>
+                <figcaption class="testimonial-author">
+                  <span class="testimonial-author-info">
+                    <span class="testimonial-name">David Antonio</span>
+                    <span class="testimonial-role">Executive Director, Horizon Foundation</span>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+
+          </div>
+        </div>
+
+        <button type="button" class="testimonial-arrow testimonial-arrow-prev" aria-label="Previous testimonial">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button type="button" class="testimonial-arrow testimonial-arrow-next" aria-label="Next testimonial">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="testimonial-dots">
+          <button type="button" class="testimonial-dot active" data-index="0" aria-label="Go to testimonial 1"></button>
+          <button type="button" class="testimonial-dot" data-index="1" aria-label="Go to testimonial 2"></button>
+          <button type="button" class="testimonial-dot" data-index="2" aria-label="Go to testimonial 3"></button>
+          <button type="button" class="testimonial-dot" data-index="3" aria-label="Go to testimonial 4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
