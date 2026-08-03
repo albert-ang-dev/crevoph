@@ -87,3 +87,56 @@
       goTo(0);
       startAutoplay();
     })();
+
+
+   (function () {
+      var items = Array.prototype.slice.call(document.querySelectorAll('.project-item'));
+      if (!items.length) return;
+
+      var modal = document.getElementById('projectModal');
+      var backdrop = document.getElementById('projectModalBackdrop');
+      var closeBtn = document.getElementById('projectModalClose');
+      var prevBtn = document.getElementById('projectModalPrev');
+      var nextBtn = document.getElementById('projectModalNext');
+      var modalImg = document.getElementById('projectModalImg');
+      var modalTitle = document.getElementById('projectModalTitle');
+      var modalMeta = document.getElementById('projectModalMeta');
+      var index = 0;
+
+      function render() {
+        var item = items[index];
+        modalImg.src = item.getAttribute('data-img');
+        modalImg.alt = item.getAttribute('data-title') || '';
+        modalTitle.textContent = item.getAttribute('data-title') || '';
+        modalMeta.textContent = item.getAttribute('data-meta') || '';
+      }
+      function open(i) {
+        index = i;
+        render();
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+      function close() {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+      function next() { index = (index + 1) % items.length; render(); }
+      function prev() { index = (index - 1 + items.length) % items.length; render(); }
+
+      items.forEach(function (item, i) {
+        item.addEventListener('click', function () { open(i); });
+      });
+      closeBtn.addEventListener('click', close);
+      backdrop.addEventListener('click', close);
+      nextBtn.addEventListener('click', next);
+      prevBtn.addEventListener('click', prev);
+
+      document.addEventListener('keydown', function (e) {
+        if (!modal.classList.contains('is-open')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowRight') next();
+        if (e.key === 'ArrowLeft') prev();
+      });
+    })();

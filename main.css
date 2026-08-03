@@ -473,6 +473,197 @@
       }
     }
 
+    /* ── Projects ── */
+    .projects-section {
+      padding: 5rem 0;
+      background-color: #ffffff;
+    }
+    .projects-subheading {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 1rem;
+      color: #666;
+      max-width: 620px;
+      margin: 0 0 2.5rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .project-item {
+      position: relative;
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border: 0;
+      padding: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      background: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .project-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(20, 18, 14, 0.45);
+      color: #fff;
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    .project-item:hover .project-overlay,
+    .project-item:focus-visible .project-overlay {
+      opacity: 1;
+    }
+    .project-item:hover .project-photo,
+    .project-item:focus-visible .project-photo {
+      transform: scale(1.05);
+    }
+    .project-item:focus-visible {
+      outline: 2px solid #B27F22;
+      outline-offset: 3px;
+    }
+    @media (max-width: 991.98px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 575.98px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ── Project modal ── */
+    .project-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1060;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .project-modal.is-open {
+      display: flex;
+    }
+    .project-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(12, 11, 9, 0.88);
+    }
+    .project-modal-dialog {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      max-width: 1000px;
+      width: 100%;
+    }
+    .project-modal-content {
+      position: relative;
+      width: 100%;
+      max-height: 86vh;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-modal-content img {
+      width: 100%;
+      max-height: 68vh;
+      object-fit: contain;
+      background-color: #000;
+      display: block;
+    }
+    .project-modal-caption {
+      padding: 1.25rem 1.5rem;
+    }
+    .project-modal-caption h3 {
+      font-family: "Poppins", Georgia, serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #fff;
+      margin: 0 0 0.35rem;
+    }
+    .project-modal-caption p {
+      font-family: "garretbook", Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #b8b6b1;
+      margin: 0;
+    }
+    .project-modal-close {
+      position: absolute;
+      top: -3rem;
+      right: 0;
+      z-index: 2;
+      width: 40px;
+      height: 40px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .project-modal-close:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+    .project-modal-nav {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .project-modal-nav:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+    @media (max-width: 767.98px) {
+      .project-modal {
+        padding: 1rem;
+      }
+      .project-modal-dialog {
+        gap: 0.5rem;
+      }
+      .project-modal-close {
+        top: -2.75rem;
+        width: 34px;
+        height: 34px;
+        font-size: 0.85rem;
+      }
+      .project-modal-nav {
+        width: 34px;
+        height: 34px;
+        font-size: 0.85rem;
+      }
+    }
+
     /* ── Industries We Serve ── */
     .industries-section {
       padding: 4rem 0 3rem;
