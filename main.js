@@ -78,6 +78,62 @@
 
 
    (function () {
+      var carousel = document.querySelector('.gallery-carousel');
+      if (!carousel) return;
+
+      var section = carousel.closest('.gallery-section');
+      var track = carousel.querySelector('.gallery-track');
+      var slides = Array.prototype.slice.call(carousel.querySelectorAll('.gallery-slide'));
+      var dots = Array.prototype.slice.call(section.querySelectorAll('.gallery-dot'));
+      var total = slides.length;
+      var index = 0;
+      var autoplayDelay = parseInt(carousel.getAttribute('data-autoplay'), 10) || 0;
+      var timer = null;
+
+      function goTo(i) {
+        index = (i + total) % total;
+        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+        dots.forEach(function (dot, di) {
+          dot.classList.toggle('active', di === index);
+        });
+      }
+      function next() { goTo(index + 1); }
+      function prev() { goTo(index - 1); }
+      function startAutoplay() {
+        if (!autoplayDelay) return;
+        stopAutoplay();
+        timer = setInterval(next, autoplayDelay);
+      }
+      function stopAutoplay() {
+        if (timer) clearInterval(timer);
+      }
+
+      dots.forEach(function (dot, di) {
+        dot.addEventListener('click', function () { goTo(di); startAutoplay(); });
+      });
+      carousel.addEventListener('mouseenter', stopAutoplay);
+      carousel.addEventListener('mouseleave', startAutoplay);
+
+      var startX = null;
+      track.addEventListener('touchstart', function (e) {
+        startX = e.touches[0].clientX;
+      }, { passive: true });
+      track.addEventListener('touchend', function (e) {
+        if (startX === null) return;
+        var diff = e.changedTouches[0].clientX - startX;
+        if (Math.abs(diff) > 40) {
+          diff < 0 ? next() : prev();
+          startAutoplay();
+        }
+        startX = null;
+      });
+
+      goTo(0);
+      startAutoplay();
+    })();
+
+
+   (function () {
       var items = Array.prototype.slice.call(document.querySelectorAll('.project-item'));
       if (!items.length) return;
 
