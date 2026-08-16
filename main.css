@@ -198,31 +198,76 @@
 
     /* ── Hero ── */
     .hero-section {
-      padding: 5rem 2rem;
-      padding-top: 6rem;
-      background-color: white;
-      margin-top: 2rem;
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 8rem 2rem 6rem;
     }
-    .hero-section h1 {
-      /* font-family: Georgia, serif; */
-      font-family: "Poppins",Georgia;
-      font-size: 2.95rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      line-height: 1.25;
-      margin-bottom: 1.25rem;
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
     }
-    .hero-section p {
+    .hero-bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(10, 9, 8, 0.55) 0%, rgba(10, 9, 8, 0.35) 45%, rgba(10, 9, 8, 0.65) 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 900px;
+    }
+    .hero-heading {
+      font-family: "Poppins", Georgia, serif;
+      font-size: 3.6rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    .hero-heading span {
+      display: block;
+    }
+    .hero-heading-gold {
+      color: #D4A64A;
+    }
+    .hero-heading-white {
+      color: #fff;
+    }
+    .hero-subheading {
       font-family: "garretbook", Arial, sans-serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #555;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #f0efec;
       line-height: 1.7;
-      margin-bottom: 2rem;
-      max-width: 780px;
+      margin: 0 auto 2.25rem;
+      max-width: 720px;
     }
-    .hero-text {
-      margin-bottom: 3rem;
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    @media (max-width: 767.98px) {
+      .hero-section {
+        min-height: 70vh;
+        padding: 7rem 1.25rem 4rem;
+      }
+      .hero-heading {
+        font-size: 2.4rem;
+      }
     }
     .btn-hero-primary {
       background-color: #B27F22;
@@ -273,59 +318,6 @@
     }
     .btn-hero-secondary:hover .play-icon {
       border-color: #B27F22;
-    }
-
-    /* Image + stats card */
-    .hero-image-wrapper {
-      position: relative;
-      width: 90%;
-      margin: 0 auto;
-      border-radius: 12px;
-      overflow: visible;
-    }
-    .hero-slideshow {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 3 / 2;
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    .hero-slide {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      opacity: 0;
-      transition: opacity 0.6s ease;
-    }
-    .hero-slide.is-active {
-      opacity: 1;
-    }
-    .hero-stats-card {
-      position: absolute;
-      bottom: -20px;
-      right: -10px;
-      background: #fff;
-      border-radius: 10px;
-      padding: 1rem 1.5rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-      display: flex;
-      gap: 2rem;
-    }
-    .hero-stats-card .stat-value {
-      font-family: "garretbook", Arial, sans-serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #B27F22;
-      line-height: 1.1;
-    }
-    .hero-stats-card .stat-label {
-      font-family: "garretbook", Arial, sans-serif;
-      font-size: 0.78rem;
-      color: #888;
-      margin-top: 0.2rem;
     }
 
     /* ── Shared section label ── */

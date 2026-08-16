@@ -26,6 +26,14 @@
   
 
 
+      <!-- Image -->
+      <div class="hero-image-wrapper">
+        <div class="hero-slideshow">
+          <img src="images/hero1.jpg" alt="CREVO in production" class="hero-slide is-active">
+          <img src="images/hero02.JPG" alt="CREVO in production" class="hero-slide">
+          <img src="images/hero03.JPG" alt="CREVO in production" class="hero-slide">
+        </div>
+      </div>
 
 
 

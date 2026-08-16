@@ -18,18 +18,6 @@
       });
 }
 
-(function () {
-      var slides = document.querySelectorAll('.hero-slide');
-      if (slides.length < 2) return;
-      var current = 0;
-      setInterval(function () {
-        slides[current].classList.remove('is-active');
-        current = (current + 1) % slides.length;
-        slides[current].classList.add('is-active');
-      }, 0.45* 6000); 
-})();
-
-
    (function () {
       var carousel = document.querySelector('.testimonials-carousel');
       if (!carousel) return;
