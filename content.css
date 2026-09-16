@@ -1,0 +1,405 @@
+/* Content scale only. Hero, contact, navigation and footer are excluded. */
+:is(.about-section,.services-section,.process-section,.why-section,.ai-section,.industries-section,.projects-section,.testimonials-section) p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+:is(.about-section,.services-section,.process-section,.why-section,.ai-section,.industries-section,.projects-section,.testimonials-section) :is(h2,.services-subheading) {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  white-space: normal;
+  margin-bottom: 1.25rem;
+}
+:is(.about-section,.services-section,.process-section,.why-section,.ai-section,.industries-section,.projects-section,.testimonials-section) :is(h3,.services-item-title,.process-step-title) {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -.01em;
+}
+:is(.about-section,.services-section,.process-section,.why-section,.ai-section,.industries-section,.projects-section,.testimonials-section) .section-label,
+.services-section .services-column-label {
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .12em;
+}
+:is(.about-section,.services-section,.process-section,.why-section,.ai-section,.industries-section,.projects-section,.testimonials-section) .nowrap-line { white-space: normal; }
+.ai-section .ai-list li,.industries-section .industry-card {font-size:1rem;font-weight:400;line-height:1.6}
+.ai-section .ai-action {
+  margin: 2rem 0 0;
+}
+.testimonials-section .testimonial-avatar {
+  background-color: var(--crevo-gold);
+  background-image: var(--crevo-gold-metallic);
+  color: #111;
+}
+.testimonials-section .testimonial-name {font-size:1rem;font-weight:600}
+.testimonials-section .testimonial-role {font-size:.875rem;line-height:1.5}
+.testimonials-section .testimonials-header {
+  max-width: 760px;
+}
+.testimonials-section .testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.testimonials-section .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem;
+  text-align: left;
+}
+.testimonials-section .testimonial-text {
+  max-width: none;
+  margin: 0 0 1.5rem;
+}
+.testimonials-section .testimonial-author {
+  flex-direction: row;
+  align-items: center;
+  gap: .75rem;
+  margin-top: auto;
+}
+.testimonials-section .testimonial-author-info {
+  align-items: flex-start;
+}
+.testimonials-section .testimonial-placeholder {
+  min-height: 18rem;
+  align-items: center;
+  justify-content: center;
+  border-style: dashed;
+  background: #fafaf8;
+  color: #777;
+  text-align: center;
+}
+.testimonials-section .testimonial-placeholder-content p {
+  margin: .5rem 0 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.testimonials-section .testimonial-placeholder-label {
+  color: var(--crevo-gold-deep);
+  font-size: .875rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.process-section .process-step-num {font-size:1rem}
+.projects-section .projects-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.projects-section .projects-label,
+.projects-section .projects-heading,
+.projects-section .projects-subheading {
+  text-align: center;
+}
+.projects-section .projects-subheading {
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
+.projects-section .project-item {
+  aspect-ratio: 16 / 9;
+}
+.about-section {padding:5rem 0}
+.about-section > .container {max-width:1120px}
+.about-section > .container > .row {
+  display:grid;
+  grid-template-columns:minmax(0,380px) minmax(0,1fr);
+  gap:clamp(2rem,5vw,4rem);
+  align-items:center !important;
+  margin:0;
+}
+.about-section > .container > .row > .col-lg-6 {width:100%;padding:0;margin-top:0;min-width:0}
+.about-section .about-portrait {width:100%;max-width:330px;aspect-ratio:3/4;margin:0;border-radius:12px}
+.about-section .about-portrait img {object-fit:cover;object-position:center top}
+.about-section .about-portrait::after {background:none}
+.about-section .about-eyebrow {margin-bottom:1rem}
+.about-section .about-heading {max-width:22ch;margin-bottom:1.25rem}
+.about-section .about-body {max-width:64ch;margin-bottom:1rem;color:#555}
+@media(max-width:991.98px) {
+  .about-section > .container > .row {grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:2rem;align-items:start !important}
+  .about-section .about-portrait {max-width:280px}
+}
+@media(max-width:767.98px) {
+  :is(.about-section,.services-section,.process-section,.why-section,.ai-section,.industries-section,.projects-section,.testimonials-section) :is(h2,.services-subheading) {font-size:1.625rem;line-height:1.35}
+  :is(.about-section,.services-section,.process-section,.why-section,.ai-section,.industries-section,.projects-section,.testimonials-section) :is(h3,.services-item-title,.process-step-title) {font-size:1.125rem}
+  .about-section {padding:3.5rem 0}
+  .about-section > .container > .row {grid-template-columns:minmax(0,1fr);gap:2rem}
+  .about-section .about-portrait {width:100%;max-width:280px;margin:0 auto}
+  .about-section .about-heading {max-width:none}
+  .ai-section .ai-action {margin-top:1.5rem}
+  .projects-section .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 36rem;
+  }
+  .testimonials-section .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-section .testimonial-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Consistent content spacing: avoid stacking large adjacent paddings. */
+:is(.about-section,.services-section,.process-section,.why-section,.ai-section,.industries-section,.gallery-section,.projects-section,.testimonials-section) {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+/* The opening editorial section needs a calmer transition from the cinematic hero. */
+.about-section {
+  padding-top: 5rem;
+  padding-bottom: 4.5rem;
+}
+.services-section .services-column { margin-bottom: 0; padding-top: 0; }
+.services-section .services-grid { row-gap: 2rem; }
+:is(.services-section,.process-section,.why-section,.projects-section) :is(.services-header,.process-header,.why-header,.projects-header) { margin-bottom: 2rem; }
+.process-section .process-eyebrow { margin-bottom: 1rem; }
+.process-section .process-label { margin-bottom: 0; }
+.services-section .services-subheading { margin-bottom: 0; }
+.why-section .why-bento { grid-template-rows: none; grid-auto-rows: auto; }
+.why-section .why-card { min-height: 0; padding: 1.75rem; }
+.why-section .why-card-text { margin-bottom: 0; }
+/* Replace spacer line breaks with the existing heading/paragraph margins. */
+.ai-section .col-lg-6 > br { display: none; }
+@media (max-width: 767.98px) {
+  :is(.about-section,.services-section,.process-section,.why-section,.ai-section,.industries-section,.gallery-section,.projects-section,.testimonials-section) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .about-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+  :is(.services-section,.process-section,.why-section,.projects-section) :is(.services-header,.process-header,.why-header,.projects-header) { margin-bottom: 1.5rem; }
+  .why-section .why-card { padding: 1.5rem; }
+}
+
+/* Interior pages use the same editorial scale and spacing rhythm as Home. */
+.letter-hero-section,
+.faq-hero-section {
+  padding: 8rem 1.25rem 2.5rem;
+}
+.letter-hero-label,
+.faq-hero-label {
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .12em;
+  margin-bottom: 1rem;
+}
+.letter-hero-heading,
+.faq-hero-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  margin-bottom: 1rem;
+}
+.letter-hero-subheading,
+.faq-hero-subheading {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.letter-section,
+.legal-section,
+.faq-section {
+  padding-top: 2.5rem;
+  padding-bottom: 4.5rem;
+}
+.letter-hero-section {
+  padding-bottom: 1.5rem;
+}
+.letter-section {
+  padding-top: 1.5rem;
+}
+.letter-section .about-portrait {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.letter-content {
+  max-width: 680px;
+}
+.letter-body,
+.legal-body,
+.legal-list,
+.faq-answer p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.letter-body {
+  margin-bottom: 1.25rem;
+}
+.letter-pull-line,
+.letter-closing-line,
+.legal-heading,
+.faq-question-text {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.letter-callout {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 1.5rem;
+}
+.letter-signature-name,
+.legal-subheading {
+  font-size: 1.125rem;
+  line-height: 1.45;
+}
+.legal-heading {
+  margin: 2.25rem 0 .875rem;
+}
+.legal-updated {
+  font-size: .875rem;
+  margin-bottom: 2rem;
+}
+.faq-question {
+  padding: 1.25rem 0;
+}
+.faq-answer {
+  padding-bottom: 1.25rem;
+}
+@media (max-width: 767.98px) {
+  .letter-hero-section,
+  .faq-hero-section {
+    padding: 6.75rem 1.25rem 2rem;
+  }
+  .letter-hero-heading,
+  .faq-hero-heading {
+    font-size: 1.625rem;
+  }
+  .letter-section,
+  .legal-section,
+  .faq-section {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  .letter-hero-section {
+    padding-bottom: 1rem;
+  }
+  .letter-section {
+    padding-top: 1rem;
+  }
+  .letter-section .about-portrait {
+    max-width: 280px;
+  }
+}
+
+
+/* Home FAQ preview */
+.home-faq-section {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+.home-faq-header {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+}
+.home-faq-header .section-label {
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .12em;
+  margin-bottom: 1rem;
+}
+.home-faq-header .section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  margin-bottom: 0;
+}
+.home-faq-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.home-faq-more a {
+  color: #1a1a1a;
+  font-family: "garretbook", Arial, sans-serif;
+  font-size: .9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--crevo-gold-deep);
+  padding-bottom: .25rem;
+  transition: color .2s ease;
+}
+.home-faq-more a:hover {
+  color: var(--crevo-gold-deep);
+}
+@media (max-width: 767.98px) {
+  .home-faq-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .home-faq-header {
+    margin-bottom: 1.5rem;
+  }
+  .home-faq-header .section-heading {
+    font-size: 1.625rem;
+  }
+}
+
+
+/* Gallery: three cinematic frames per slide. */
+.gallery-slide {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.gallery-item {
+  aspect-ratio: 16 / 9;
+}
+@media (max-width: 991.98px) {
+  .gallery-slide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 575.98px) {
+  .gallery-slide {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact section follows the same editorial scale as the Home content. */
+.contact-section {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+.contact-section .contact-label {
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .12em;
+  margin-bottom: 1rem;
+}
+.contact-section .contact-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  margin-bottom: 1.25rem;
+}
+.contact-section .contact-body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767.98px) {
+  .contact-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .contact-section .contact-heading {
+    font-size: 1.625rem;
+  }
+}

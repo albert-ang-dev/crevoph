@@ -57,78 +57,6 @@
     ]
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What does Crevo do?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Crevo helps brands, companies, and organizations tell their stories through video production, photography, content direction, and AI-enhanced visual storytelling."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What kind of projects do you accept?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We work on corporate videos, brand films, event coverage, executive interviews, testimonial videos, company AVPs, product content, social media visuals, and selected AI-assisted creative campaigns."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you only shoot videos, or do you also help with the concept?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We can do both. Some clients already have a clear brief, while others need help shaping the story, message, flow, and visual direction before production begins."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you offer photography as well?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Crevo offers corporate photography, event photography, executive portraits, brand photos, and image sets that can be used for websites, social media, press releases, and marketing materials."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does a project usually cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Each project is quoted based on the scope, number of shoot days, crew size, locations, equipment, editing requirements, and final deliverables. Once we understand what you need, we can prepare a customized quotation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How far in advance should we book?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For small shoots, we recommend reaching out at least 2 to 3 weeks ahead. For larger productions, brand films, or multi-day projects, it is best to inquire at least 1 month in advance so we can properly plan the concept, schedule, crew, and logistics."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you work with our company's existing brand guidelines?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We can align the visuals, tone, colors, pacing, and messaging with your brand guidelines, campaign direction, or internal communications requirements."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you also create AI-generated content?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Crevo is exploring and developing AI-assisted content solutions, including concept visuals, AI-enhanced storyboards, image generation, video ideation, and selected AI-powered brand storytelling executions."
-        }
-      }
-    ]
-  }
-  </script>
 
   <link rel="icon" type="image/png" href="images/crevo-logo.png">
   <link rel="apple-touch-icon" href="images/crevo-logo.png">
@@ -139,9 +67,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.css?v=footer-grid-balanced-20260916">
+  <link rel="stylesheet" href="hero.css?v=saved-metallic-hero-restored">
+  <link rel="stylesheet" href="content.css?v=metallic-soft-gold-20260915">
 </head>
-<body>
+<body class="crevo-redesign">
+  <a class="skip-link" href="#home">Skip to content</a>
 
   <!-- ── Navbar ── -->
   <nav class="navbar">
@@ -158,7 +89,7 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#faq">FAQs</a></li>
+          <li><a href="crevo-faq.html">FAQs</a></li>
           <li><a href="crevo-founder-letter.html">Letter from the Founder</a></li>
         </ul>
 
@@ -180,22 +111,24 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero-section" id="home">
-    <div class="hero-bg">
-      <img src="images/Philippines-Manila-Bay.jpg" alt="Manila skyline at night" class="hero-bg-img">
-      <div class="hero-bg-overlay"></div>
-    </div>
-    <div class="container hero-content">
-      <h1 class="hero-heading">
-        <span class="hero-heading-gold">Stories that</span>
-        <span class="hero-heading-white">move markets.</span>
-      </h1>
-      <p class="hero-subheading">Strategic storytelling, visual communications, and AI-powered creative production — helping organizations, brands, and leaders communicate with clarity, purpose, and impact.</p>
-      <div class="hero-cta-group">
-        <a href="#contact" class="btn-hero-primary">Schedule a Discovery Call</a>
-        <a href="#projects" class="btn-hero-primary">View Our Work</a>
+  <!-- Animated gold hero -->
+  <section class="hero-section gold-hero" id="home" aria-labelledby="hero-title" tabindex="-1">
+    <div class="gold-fallback" aria-hidden="true"></div>
+    <canvas id="gold-wave" aria-hidden="true"></canvas>
+    <div class="gold-shade" aria-hidden="true"></div>
+    <div class="container gold-content">
+      <p class="gold-eyebrow">CREATIVE EVOLUTION <span aria-hidden="true">✦</span> SINCE 1999</p>
+      <h1 id="hero-title">Stories that<br>move <em>markets.</em></h1>
+      <p class="gold-description">Strategic storytelling, visual communications, and AI-powered<br class="desktop-break"> production. Human insight at the heart of every story.</p>
+      <div class="gold-actions">
+        <a class="gold-primary" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+        <a class="gold-secondary" href="#projects">Explore our work</a>
       </div>
+    </div>
+    <div class="gold-bottom">
+      <span>MANILA, PHILIPPINES</span>
+      <a href="#about">Discover Crevo <span aria-hidden="true">↓</span></a>
+      <button id="wave-toggle" type="button" aria-pressed="false" hidden>Pause animation</button>
     </div>
   </section>
 
@@ -304,7 +237,7 @@
         <div class="about-eyebrow services-eyebrow">
           <p class="section-label about-label">What we do</p>
         </div>
-        <p class="services-subheading"><span class="nowrap-line">Strategy first, always.</span><br><span class="nowrap-line">Every engagement begins with thinking, not production.</span></p>
+        <p class="services-subheading"><span class="nowrap-line">We shape ideas into stories that connect.</span></p>
       </div>
 
       <div class="row gx-5 services-grid">
@@ -494,8 +427,7 @@
           <br>
           <h2 class="section-heading ai-heading">AI-powered creative, <br>human at the core.</h2>
           <p class="ai-body">Technology is changing how content is created. We help organizations use AI to enhance creativity, accelerate production, and unlock new storytelling possibilities — without losing the human insight that makes communication meaningful.</p>
-          <br>
-          <p><a href="#contact" class="btn-hero-primary">Explore  AI Content With Us</a> </p>
+          <p class="ai-action"><a href="#contact" class="btn-hero-primary">Explore AI Content With Us</a></p>
         </div>
 
         <div class="col-lg-6">
@@ -545,41 +477,36 @@
         <div class="gallery-track">
 
           <div class="gallery-slide">
-            <div class="gallery-item"><img src="images/Pinnacle_2292.JPG" alt="Team sharing a laugh in the office" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/creatived.jpg" alt="Creative team reviewing storyboards" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/drone1.jpg" alt="Aerial view of a retail activation" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/hero02.JPG" alt="Retail staff greeting shoppers" loading="lazy"></div>
-          </div>
-
-          <div class="gallery-slide">
+            <div class="gallery-item"><img src="images/hero02.JPG" alt="WalterMart retail staff greeting shoppers" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/drone1.jpg" alt="Aerial view of WalterMart and the surrounding area" loading="lazy"></div>
             <div class="gallery-item"><img src="images/hero03.JPG" alt="Full crew and staff group photo" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/hero1.jpg" alt="Interview setup in a studio" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/production.jpg" alt="Boom mic operator on an interview set" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/puzzle.jpg" alt="Team connecting the final piece of a puzzle" loading="lazy"></div>
           </div>
 
           <div class="gallery-slide">
-            <div class="gallery-item"><img src="images/jen.jpg" alt="Portrait of Jennifer Chua, Founder of CREVO" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/jenn.png" alt="Jennifer Chua seated for a portrait session" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/project-images/download.jpg" alt="Fireside chat on stage for a retail brand activation" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/project-images/download (1).jpg" alt="Crew running a live multi-camera broadcast" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/gallery-executive-interview.jpg" alt="CREVO filming a multi-camera executive interview" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/gallery-group-interview.jpg" alt="CREVO filming a group interview in a client’s home" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/gallery-interview-pair.jpg" alt="CREVO directing a two-person interview production" loading="lazy"></div>
           </div>
 
           <div class="gallery-slide">
-            <div class="gallery-item"><img src="images/project-images/download (2).jpg" alt="Ballroom stage setup for a corporate gala" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/project-images/download (3).jpg" alt="Studio lighting setup for a video shoot" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/project-images/download (4).jpg" alt="On-location interview shoot in a mall" loading="lazy"></div>
-            <div class="gallery-item"><img src="images/project-images/download (5).jpg" alt="Outdoor documentary-style interview" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/gallery-jcaaa-office-interview.jpg" alt="CREVO filming an interview in a modern office" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/gallery-jcaaa-02.jpg" alt="CREVO crew recording an interview with a JCAAA executive" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/gallery-jcaaa-03.jpg" alt="Behind-the-scenes view of a JCAAA interview production" loading="lazy"></div>
+          </div>
+
+          <div class="gallery-slide">
+            <div class="gallery-item"><img src="images/gallery-city-shoot.jpg" alt="CREVO production crew filming on a city street" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/about-crevo-8692.jpg" alt="CREVO team filming an interview on location" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/gallery-classroom-interview.jpg" alt="CREVO filming an interview in a classroom setting" loading="lazy"></div>
           </div>
 
         </div>
       </div>
 
-      <div class="gallery-dots">
-        <span class="gallery-dot active"></span>
-        <span class="gallery-dot"></span>
-        <span class="gallery-dot"></span>
-        <span class="gallery-dot"></span>
+      <div class="gallery-dots">        <button class="gallery-dot active" type="button" aria-label="View gallery slide 1"></button>
+        <button class="gallery-dot" type="button" aria-label="View gallery slide 2"></button>
+        <button class="gallery-dot" type="button" aria-label="View gallery slide 3"></button>
+        <button class="gallery-dot" type="button" aria-label="View gallery slide 4"></button>
       </div>
     </div>
   </section>
@@ -590,39 +517,29 @@
     <div class="container">
       <p class="section-label projects-label">Our Work</p>
       <h2 class="section-heading projects-heading">Featured projects.</h2>
-      <p class="projects-subheading">A closer look at the campaigns, broadcasts, and stories we've helped bring to life.</p>
+      <p class="projects-subheading">A closer look at some of the campaigns, broadcasts, and stories we've helped bring to life.</p>
 
       <div class="projects-grid">
 
-        <button type="button" class="project-item" data-title="Retail brand activation" data-meta="Fireside chat, mall campaign · 2025" data-img="images/project-images/download.jpg">
-          <img src="images/project-images/download.jpg" alt="Fireside chat on stage for a retail brand activation" class="project-photo" loading="lazy">
-          <span class="project-overlay"><i class="fas fa-expand"></i></span>
-        </button>
+        <a class="project-item project-video-link" href="https://youtu.be/Y1AwzqsTxmM" target="_blank" rel="noopener noreferrer" aria-label="Watch the ADFI Building Futures Video on YouTube">
+          <img src="images/adfi-building-futures.jpg" alt="ADFI Building Futures Video" class="project-photo" loading="lazy">
+          <span class="project-overlay project-video-overlay"><span class="project-video-title">ADGO Design Foundation Inc: Building Futures</span><i class="fas fa-play" aria-hidden="true"></i></span>
+        </a>
 
-        <button type="button" class="project-item" data-title="Live broadcast control room" data-meta="Multi-camera production · 2025" data-img="images/project-images/download (1).jpg">
-          <img src="images/project-images/download (1).jpg" alt="Crew running a live multi-camera broadcast from the control room" class="project-photo" loading="lazy">
-          <span class="project-overlay"><i class="fas fa-expand"></i></span>
-        </button>
+        <a class="project-item project-video-link" href="https://youtu.be/gc8PAYw1wpw" target="_blank" rel="noopener noreferrer" aria-label="Watch AIA Tambuli Entry: Hope for the Breast on YouTube">
+          <img src="images/aia-hope-for-the-breast.jpg" alt="AIA Hope Mobi-Clinic for breast cancer screening" class="project-photo" loading="lazy">
+          <span class="project-overlay project-video-overlay"><span class="project-video-title">AIA Tambuli Entry: Hope for the Breast</span><i class="fas fa-play" aria-hidden="true"></i></span>
+        </a>
 
-        <button type="button" class="project-item" data-title="Corporate gala production" data-meta="Stage design &amp; event AVP · 2025" data-img="images/project-images/download (2).jpg">
-          <img src="images/project-images/download (2).jpg" alt="Ballroom stage setup for a corporate appreciation gala" class="project-photo" loading="lazy">
-          <span class="project-overlay"><i class="fas fa-expand"></i></span>
-        </button>
+        <a class="project-item project-video-link" href="https://www.youtube.com/watch?v=Z9NA6VCZhd0" target="_blank" rel="noopener noreferrer" aria-label="Watch WalterMart: Experience Happiness on YouTube">
+          <img src="images/waltermart-experience-happiness.jpg" alt="WalterMart Experience Happiness community collage" class="project-photo" loading="lazy">
+          <span class="project-overlay project-video-overlay"><span class="project-video-title">WalterMart: Experience Happiness</span><i class="fas fa-play" aria-hidden="true"></i></span>
+        </a>
 
-        <button type="button" class="project-item" data-title="Executive video shoot" data-meta="Studio lighting setup · 2026" data-img="images/project-images/download (3).jpg">
-          <img src="images/project-images/download (3).jpg" alt="Production team on set with studio lighting for an executive video shoot" class="project-photo" loading="lazy">
-          <span class="project-overlay"><i class="fas fa-expand"></i></span>
-        </button>
-
-        <button type="button" class="project-item" data-title="On-location brand interview" data-meta="Retail campaign shoot · 2026" data-img="images/project-images/download (4).jpg">
-          <img src="images/project-images/download (4).jpg" alt="On-location interview shoot inside a shopping mall" class="project-photo" loading="lazy">
-          <span class="project-overlay"><i class="fas fa-expand"></i></span>
-        </button>
-
-        <button type="button" class="project-item" data-title="Outdoor documentary interview" data-meta="Location shoot · 2025" data-img="images/project-images/download (5).jpg">
-          <img src="images/project-images/download (5).jpg" alt="Crew filming an outdoor documentary-style interview in a park" class="project-photo" loading="lazy">
-          <span class="project-overlay"><i class="fas fa-expand"></i></span>
-        </button>
+        <a class="project-item project-video-link" href="https://www.youtube.com/watch?v=RuIE83uVL0E" target="_blank" rel="noopener noreferrer" aria-label="Watch AIA Healthiest Schools Summit on YouTube">
+          <img src="images/aia-healthiest-schools-summit.jpg" alt="Illustration for the AIA Healthiest Schools Summit" class="project-photo" loading="lazy">
+          <span class="project-overlay project-video-overlay"><span class="project-video-title">AIA Healthiest Schools Summit</span><i class="fas fa-play" aria-hidden="true"></i></span>
+        </a>
 
       </div>
     </div>
@@ -653,7 +570,7 @@
 
   
   <!-- TESTIMONIALS -->
-  <section class="testimonials-section">
+  <section class="testimonials-section" id="testimonials">
     <div class="container">
       <div class="testimonials-header">
         <p class="section-label">What Clients Say</p>
@@ -661,158 +578,111 @@
       </div>
 
       <div class="testimonials-grid">
-
-        <div class="testimonial-card">
-          <i class="fas fa-quote-right testimonial-quote-mark"></i>
+        <article class="testimonial-card">
+          <i class="fas fa-quote-right testimonial-quote-mark" aria-hidden="true"></i>
           <p class="testimonial-text">"We've been working with Crevo for years, and I've had the privilege of seeing them grow alongside us. They're one of the most dependable and flexible creative partners we've worked with—equally committed whether it's a small, quick-turnaround project or a major one. They're easy to work with, responsive, and always willing to go the extra mile. They're a partner we can trust, and one we're happy to keep coming back to."</p>
           <div class="testimonial-author">
-            <span class="testimonial-avatar">KW</span>
+            <span class="testimonial-avatar" aria-hidden="true">KW</span>
             <div class="testimonial-author-info">
-              <span class="testimonial-name">Kay Wong</span>
-              <span class="testimonial-role">AIA Philippines</span>
+              <span class="testimonial-name">Katherine Wong</span>
+              <span class="testimonial-role">Director, Brand Leadership<br>AIA Philippines</span>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="testimonial-card">
-          <i class="fas fa-quote-right testimonial-quote-mark"></i>
+        <article class="testimonial-card">
+          <i class="fas fa-quote-right testimonial-quote-mark" aria-hidden="true"></i>
           <p class="testimonial-text">"Jen is not only a dear friend to me—she is someone who has beautifully captured so many precious moments of my life and my family's journey. She has a special gift for seeing beyond the picture itself. She is sharp, accurate, creative, and attentive to every detail. She doesn't simply take photographs; she turns pictures into beautiful stories and memories that we can treasure for a lifetime. Jen has been part of many of our important family events, always ready to share her ideas and provide helpful input to make every occasion even more meaningful and memorable. She is also very easy to reach and dependable whenever we need her. What I appreciate most about Jen is that she is someone I can truly trust. She is reliable, professional, creative, and passionate about what she does."</p>
           <div class="testimonial-author">
-            <span class="testimonial-avatar">AC</span>
+            <span class="testimonial-avatar" aria-hidden="true">AC</span>
             <div class="testimonial-author-info">
-              <span class="testimonial-name">Angie T. Chua</span>
-              <span class="testimonial-role">President, JCAAA</span>
+              <span class="testimonial-name">Angie Chua</span>
+              <span class="testimonial-role">President<br>JCAAA</span>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="testimonial-card">
-          <i class="fas fa-quote-right testimonial-quote-mark"></i>
-          <p class="testimonial-text">"Jennifer Chua and Crevo stand out as the best team we've worked with for AVPs. Having engaged several companies in the past, none have matched their ability to craft compelling storylines, capture powerful visuals, and consistently deliver outputs that exceed expectations. Their work doesn't just look good—it creates real impact and resonates with audiences. Most importantly, they deliver exceptional value and are truly worth every investment."</p>
+        <article class="testimonial-card">
+          <i class="fas fa-quote-right testimonial-quote-mark" aria-hidden="true"></i>
+          <p class="testimonial-text">"Jennifer Chua and Crevo stand out as the best team we’ve worked with for AVPs. Having engaged several companies in the past, none have matched their ability to craft compelling storylines, capture powerful visuals, and consistently deliver outputs that exceed expectations. Their work doesn’t just look good—it creates real impact and resonates with audiences. Most importantly, they deliver exceptional value and are truly worth every investment."</p>
           <div class="testimonial-author">
-            <span class="testimonial-avatar">DG</span>
+            <span class="testimonial-avatar" aria-hidden="true">DG</span>
             <div class="testimonial-author-info">
               <span class="testimonial-name">Arch. Daniel Go, fuap, AA and APEC Architect</span>
-              <span class="testimonial-role">Principal Architect, ADGO Architecture and Design Inc.</span>
+              <span class="testimonial-role">Principal Architect<br>ADGO Architecture and Design Inc.</span>
             </div>
           </div>
-        </div>
+        </article>
 
       </div>
     </div>
   </section>
 
 
-  <!-- FAQ -->
-  <section class="faq-section" id="faq">
+
+  <!-- FAQ PREVIEW -->
+  <section class="faq-section home-faq-section" aria-labelledby="home-faq-heading">
     <div class="container">
-      <div class="faq-header text-center">
-        <p class="section-label faq-label">FAQs</p>
-        <h2 class="section-heading faq-heading">Frequently asked questions.</h2>
-      </div>
+      <header class="home-faq-header text-center">
+        <p class="section-label">Common Questions</p>
+        <h2 class="section-heading" id="home-faq-heading">A few things clients ask.</h2>
+      </header>
 
       <div class="faq-list">
-
         <div class="faq-item">
-          <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faqAnswer1" aria-expanded="false" aria-controls="faqAnswer1">
-            <span class="faq-question-text">What does Crevo do?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="collapse" id="faqAnswer1">
-            <div class="faq-answer">
-              <p>Crevo helps brands, companies, and organizations tell their stories through video production, photography, content direction, and AI-enhanced visual storytelling.</p>
-            </div>
+          <h3 class="m-0">
+            <button class="faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#home-faq-answer-1" aria-expanded="false" aria-controls="home-faq-answer-1">
+              <span class="faq-question-text">What does Crevo do?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </button>
+          </h3>
+          <div class="collapse" id="home-faq-answer-1">
+            <div class="faq-answer"><p>Crevo helps brands, companies, and organizations tell their stories through video production, photography, content direction, and AI-enhanced visual storytelling.</p></div>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faqAnswer2" aria-expanded="false" aria-controls="faqAnswer2">
-            <span class="faq-question-text">What kind of projects do you accept?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="collapse" id="faqAnswer2">
-            <div class="faq-answer">
-              <p>We work on corporate videos, brand films, event coverage, executive interviews, testimonial videos, company AVPs, product content, social media visuals, and selected AI-assisted creative campaigns.</p>
-            </div>
+          <h3 class="m-0">
+            <button class="faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#home-faq-answer-2" aria-expanded="false" aria-controls="home-faq-answer-2">
+              <span class="faq-question-text">Do you only shoot videos, or do you also help with the concept?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </button>
+          </h3>
+          <div class="collapse" id="home-faq-answer-2">
+            <div class="faq-answer"><p>We can do both. Some clients already have a clear brief, while others need help shaping the story, message, flow, and visual direction before production begins.</p></div>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faqAnswer3" aria-expanded="false" aria-controls="faqAnswer3">
-            <span class="faq-question-text">Do you only shoot videos, or do you also help with the concept?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="collapse" id="faqAnswer3">
-            <div class="faq-answer">
-              <p>We can do both. Some clients already have a clear brief, while others need help shaping the story, message, flow, and visual direction before production begins.</p>
-            </div>
+          <h3 class="m-0">
+            <button class="faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#home-faq-answer-3" aria-expanded="false" aria-controls="home-faq-answer-3">
+              <span class="faq-question-text">How much does a project usually cost?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </button>
+          </h3>
+          <div class="collapse" id="home-faq-answer-3">
+            <div class="faq-answer"><p>Each project is quoted based on the scope, number of shoot days, crew size, locations, equipment, editing requirements, and final deliverables. Once we understand what you need, we can prepare a customized quotation.</p></div>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faqAnswer4" aria-expanded="false" aria-controls="faqAnswer4">
-            <span class="faq-question-text">Do you offer photography as well?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="collapse" id="faqAnswer4">
-            <div class="faq-answer">
-              <p>Yes. Crevo offers corporate photography, event photography, executive portraits, brand photos, and image sets that can be used for websites, social media, press releases, and marketing materials.</p>
-            </div>
+          <h3 class="m-0">
+            <button class="faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#home-faq-answer-4" aria-expanded="false" aria-controls="home-faq-answer-4">
+              <span class="faq-question-text">Can Crevo work outside Metro Manila or overseas?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </button>
+          </h3>
+          <div class="collapse" id="home-faq-answer-4">
+            <div class="faq-answer"><p>Yes. We work on projects outside Metro Manila and have completed many overseas engagements. Travel, scheduling, crew requirements, logistics, and related costs are discussed and planned on a project-by-project basis.</p></div>
           </div>
         </div>
+      </div>
 
-        <div class="faq-item">
-          <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faqAnswer5" aria-expanded="false" aria-controls="faqAnswer5">
-            <span class="faq-question-text">How much does a project usually cost?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="collapse" id="faqAnswer5">
-            <div class="faq-answer">
-              <p>Each project is quoted based on the scope, number of shoot days, crew size, locations, equipment, editing requirements, and final deliverables. Once we understand what you need, we can prepare a customized quotation.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faqAnswer6" aria-expanded="false" aria-controls="faqAnswer6">
-            <span class="faq-question-text">How far in advance should we book?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="collapse" id="faqAnswer6">
-            <div class="faq-answer">
-              <p>For small shoots, we recommend reaching out at least 2 to 3 weeks ahead. For larger productions, brand films, or multi-day projects, it is best to inquire at least 1 month in advance so we can properly plan the concept, schedule, crew, and logistics.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faqAnswer7" aria-expanded="false" aria-controls="faqAnswer7">
-            <span class="faq-question-text">Can you work with our company's existing brand guidelines?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="collapse" id="faqAnswer7">
-            <div class="faq-answer">
-              <p>Yes. We can align the visuals, tone, colors, pacing, and messaging with your brand guidelines, campaign direction, or internal communications requirements.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faqAnswer8" aria-expanded="false" aria-controls="faqAnswer8">
-            <span class="faq-question-text">Do you also create AI-generated content?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="collapse" id="faqAnswer8">
-            <div class="faq-answer">
-              <p>Yes. Crevo is exploring and developing AI-assisted content solutions, including concept visuals, AI-enhanced storyboards, image generation, video ideation, and selected AI-powered brand storytelling executions.</p>
-            </div>
-          </div>
-        </div>
-
+      <div class="home-faq-more">
+        <a href="crevo-faq.html">View all FAQs <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
-
 
   <!-- CONTACT -->
   <section class="contact-section" id="contact">
@@ -822,7 +692,7 @@
         <!-- Left: intro + contact details -->
         <div class="col-lg-5">
           <p class="section-label contact-label">Let's Connect</p>
-          <h2 class="section-heading contact-heading">Let's have a conversation</h2>
+          <h2 class="section-heading contact-heading">Let's have a conversation.</h2>
           <p class="contact-body">Whether you're developing a campaign, launching an initiative, creating executive communications, or exploring AI-powered content, we'd love to learn more about your goals. Let's create something meaningful together.</p>
 
           <ul class="contact-details">
@@ -873,14 +743,14 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <footer class="site-footer" id="footer">
     <div class="container">
       <div class="row gy-4">
 
         <!-- Brand + blurb -->
         <div class="col-lg-4">
           <img src="images/FOOTER-LOGO.png" alt="CREVO" class="footer-logo">
-          <p class="footer-blurb">Brand Storytelling • Narrative Direction • Visual Strategy.<br><br>Founded 1999 · Manila, Philippines.</p>
+          <p class="footer-blurb"><span class="footer-services">Brand Storytelling • Narrative Direction • Visual Strategy</span><br><br>Founded 1999 · Manila, Philippines.</p>
           <div class="footer-social">
             <a href="" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           </div>
@@ -952,7 +822,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="crevo-faq.html">FAQ</a></li>
         <li><a href="crevo-founder-letter.html">A Letter From Founder</a></li>
       </ul>
 
@@ -968,6 +838,7 @@
   </div>
   <script defer src="/_vercel/insights/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="main.js"></script>
+  <script src="main.js?v=youtube-project-20260915"></script>
+  <script src="hero.js?v=saved-metallic-hero-restored"></script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+/* Crevo — centered typography and flowing metallic gold. */
+@font-face{font-family:garretbook;src:url('fonts/garet.book.ttf');font-display:swap}
+html{scroll-padding-top:6rem}section[id]{scroll-margin-top:5rem}
+.skip-link{position:fixed;top:-6rem;left:1rem;z-index:2000;padding:1rem;background:white;color:black}.skip-link:focus{top:1rem}
+a:focus-visible,button:focus-visible{outline:3px solid var(--crevo-gold-light);outline-offset:5px}
+.crevo-redesign .navbar{background:#080808f2;border-bottom:1px solid #ffffff10;padding:.7rem clamp(1.25rem,4vw,4rem)}
+.crevo-redesign .navbar-logo{height:46px;filter:invert(1)}
+.crevo-redesign .navbar-nav-inline{gap:1.6rem}.crevo-redesign .navbar-nav-inline a{color:#c7c7c7;font-size:.875rem;letter-spacing:0;font-weight:400}.crevo-redesign .navbar-nav-inline a:hover{color:var(--crevo-gold-light)}
+.hamburger-btn,.btn-close-custom{min-width:44px;min-height:44px}.hamburger-btn .bar{width:23px;background:var(--crevo-gold-light)}.offcanvas-nav a{min-height:48px;font-size:1rem}
+.gold-hero{isolation:isolate;background:#030303;color:white;display:grid;place-items:center;min-height:760px;min-height:max(760px,100svh);padding:9rem 1.5rem 10rem;position:relative;overflow:hidden}
+.gold-hero canvas,.gold-fallback,.gold-shade{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.gold-fallback{background:radial-gradient(ellipse at 84% 100%,#F4E5BE 0%,var(--crevo-gold) 10%,var(--crevo-gold-dark) 28%,transparent 52%),radial-gradient(ellipse at 10% 100%,#6D5424 0%,#241B0C 25%,transparent 45%),#030303}
+.gold-hero canvas{opacity:0;transition:opacity 1s}.gold-hero.wave-ready canvas{opacity:1}
+.gold-shade{background:linear-gradient(180deg,#0006 0%,#0001 25%,#0004 58%,#0001 80%,#0008 100%)}
+.gold-content{position:relative;z-index:1;text-align:center;max-width:1050px;margin:0 auto}
+.gold-eyebrow{display:inline-flex;gap:.8rem;align-items:center;margin:0 0 2.2rem;padding:.55rem 1rem;border:1px solid #ffffff29;border-radius:99px;background:#09090980;color:#d9d6cd;font:400 .75rem/1.4 garretbook,Arial,sans-serif;letter-spacing:.12em}
+.gold-eyebrow span{color:var(--crevo-gold-light);text-shadow:0 0 12px rgba(245,230,200,.65)}
+.gold-content h1{font-family:Poppins,Arial,sans-serif;font-size:clamp(3.4rem,6.3vw,6rem);font-weight:400;line-height:1.06;letter-spacing:-.055em;margin:0 0 1.7rem;color:#fff;text-shadow:0 3px 30px #0005}
+.gold-content h1 em{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.05em;color:var(--crevo-gold-soft);background:linear-gradient(110deg,#A77E39 0%,#F7E8C1 24%,#C9A86A 44%,#FFF5D6 58%,#B68D48 82%,#E8CE92 100%);background-size:180% 100%;background-position:35% 0;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 8px rgba(201,168,106,.2))}
+.gold-description{font:400 1rem/1.8 garretbook,Arial,sans-serif;color:#d2d0cb;max-width:660px;margin:0 auto 2rem;text-wrap:pretty;text-shadow:0 1px 10px #000}
+.gold-actions{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap}.gold-actions a{display:inline-flex;align-items:center;justify-content:center;gap:1.6rem;min-height:52px;padding:.85rem 1.5rem;border-radius:99px;font:500 .9375rem/1.4 garretbook,Arial,sans-serif;text-decoration:none;transition:transform .2s,background .2s}
+.gold-primary{background-color:var(--crevo-gold);background-image:var(--crevo-gold-metallic);color:#151515;box-shadow:inset 0 1px 1px #fff9,inset 0 -3px 6px #6a4d1d55,0 7px 22px #0007}.gold-primary:hover{background-color:var(--crevo-gold-hover);background-image:linear-gradient(135deg,#FFF1C6,#D9BC7D 36%,#F2D99E 58%,#A77E39);color:#151515;transform:translateY(-2px)}
+.gold-secondary{background:#191919e6;color:#fff;border:1px solid rgba(201,168,106,.42)}.gold-secondary:hover{color:var(--crevo-gold-light);background:#2D2412;box-shadow:inset 0 1px 0 rgba(255,245,214,.16);transform:translateY(-2px)}
+.gold-bottom{position:absolute;bottom:1.5rem;left:clamp(1.25rem,4vw,4rem);right:clamp(1.25rem,4vw,4rem);z-index:1;display:flex;justify-content:space-between;align-items:center;gap:1rem;font:400 .75rem/1.5 garretbook,Arial,sans-serif;color:#c3c0b9;letter-spacing:.08em}
+.gold-bottom a,.gold-bottom button{font:400 .8125rem/1.5 garretbook,Arial,sans-serif;letter-spacing:0;color:#e2ded5;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;gap:.8rem;background:#08080866;border:1px solid #ffffff24;border-radius:99px;padding:.55rem 1rem}.gold-bottom button[hidden]{display:none}
+.gold-bottom a:hover,.gold-bottom button:hover{color:var(--crevo-gold-light);background:#2D2412;border-color:rgba(201,168,106,.46)}
+@media(min-width:1200px){.hamburger-btn{display:none}}
+@media(max-width:1199.98px){.navbar-nav-inline{display:none}.hamburger-btn{display:block}.gold-hero{min-height:max(720px,90svh)}}
+@media(max-width:600px){
+ .crevo-redesign .navbar{padding:.55rem 1.25rem}.crevo-redesign .navbar-logo{height:39px}
+ .gold-hero{min-height:700px;min-height:max(700px,95svh);padding:8.5rem 1.25rem 11rem;align-items:center}
+ .gold-content{padding:0}.gold-eyebrow{font-size:.75rem;letter-spacing:.08em;gap:.55rem;margin-bottom:1.8rem}
+ .gold-content h1{font-size:clamp(2.8rem,12vw,4.4rem);line-height:1.1;letter-spacing:-.045em;margin-bottom:1.5rem}
+ .gold-description{font-size:1rem;line-height:1.7;max-width:360px}.desktop-break{display:none}
+ .gold-actions{gap:.65rem}.gold-actions a{padding:.85rem 1.1rem;font-size:.875rem;gap:.75rem}
+ .gold-bottom{bottom:1.2rem;flex-wrap:wrap;justify-content:space-between;gap:.7rem}.gold-bottom>span{flex:0 0 100%;font-size:.75rem;text-align:center;order:3}
+ .gold-bottom a,.gold-bottom button{font-size:.75rem;padding:.5rem .8rem}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gold-hero *,.gold-hero *::before,.gold-hero *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
